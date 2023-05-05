@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Mensajes>
+	<Mensaje key="" pt="" en="" />	
+  <Mensaje key="Patente" pt="Placa" en="License Plate" es-EC="Placa" es-UY="Matrícula" es-PE="Placa"/>
+  <Mensaje key="Listar" pt="Listar" en="List" />
+  <Mensaje key="Color" pt="Cor" en="Color" />
+	<Mensaje key="Consultar" pt="Consultar" en="Query" />
+	<Mensaje key="Volver" pt="Voltar" en="Back" />
+	<Mensaje key="Cambiar" pt="Mudar" en="Change" />
+  <Mensaje key="Confirmar" pt="Confirmar" en="Confirm" />
+  <Mensaje key="Cancelar" pt="Cancelar" en="Cancel" />
+  <Mensaje key="Siguiente" pt="Próximo" en="Next" />
+  <Mensaje key="Buscar" pt="Procurar" en="Find" />
+  <Mensaje key="Recuperar" pt="Recuperar" en="Undelete" />
+  <Mensaje key="Contraseña" pt="Senha" en="Password" />
+  <Mensaje key="Vía Abierta" pt="Pista Aberta" en="Vía Abierta" />
+  <Mensaje key="Vía Cerrada" pt="Pista Fechada" en="Vía Cerrada" />
+  <Mensaje key="Causa de Cierre" pt="Motivo de Fechamento" en="Causa de Cierre" />
+  <Mensaje key="Modo" pt="Modo" en="Modo" />
+  <Mensaje key="Cajero" pt="Arrecadador" en="Cajero" />
+  <Mensaje key="Estación" pt="Praça" en="Estación" />
+  <Mensaje key="Vía" pt="Pista" en="Vía" />
+  <Mensaje key="Parte" pt="Prestação" en="Parte" />
+  <Mensaje key="Tarifa" pt="Tarifa" en="Tarifa" />
+  <Mensaje key="Categoría" pt="Categoría" en="Categoría" />
+  <Mensaje key="Tránsito" pt="Trânsito" en="Tránsito" />
+  <Mensaje key="Forma de Pago" pt="Forma de Pagamento" en="Forma de Pago" />
+  <Mensaje key="Pago" pt="Pagamento" en="Pago" />
+  <Mensaje key="Factura" pt="Fatura" en="Factura" />
+  <Mensaje key="RUC" pt="CNPJ" en="RUC" />
+  <Mensaje key="Razón Social" pt="Razão Social" en="Razón Social" />
+  <Mensaje key="Vía" pt="Pista" en="Vía" />
+  <Mensaje key="Alarma" pt="Alarma" en="Alarma" />
+  <Mensaje key="Semáforo" pt="Semáforo" en="Semáforo" />
+  <Mensaje key="Barrera" pt="Cancela" en="Barrera" />
+  <Mensaje key="Impresora" pt="Impressora" en="Impresora" />
+  <Mensaje key="Antena" pt="Antena" en="Antena" />
+  <Mensaje key="BD Local" pt="BD Local" en="BD Local" />
+  <Mensaje key="BD Estación" pt="BD Praça" en="BD Estación" />
+  <Mensaje key="Marquesina" pt="Letreiro" en="Marquesina" />
+  <Mensaje key="Separador" pt="Separador" en="Separador" />
+  <Mensaje key="Tarjeta Chip" pt="Cartão Chip" en="Tarjeta Chip" />
+  <Mensaje key="TSC" pt="TSC" en="TSC" />
+  <Mensaje key="TAG" pt="TAG" en="TAG" />
+  <Mensaje key="Último tránsito:" pt="Último trânsito:" en="Último tránsito:" />
+  <Mensaje key="Ingrese código de cajero" pt="Digite Código de Arrecadador" en="Ingrese código de cajero" />
+  <Mensaje key="Apertura de turno" pt="Abertura de turno" en="Apertura de turno" />
+  <Mensaje key="Ingrese el código de cajero:" pt="Digite o Código de Arrecadador:" en="Ingrese el código de cajero:" />
+  <Mensaje key="Ingrese la clave:" pt="Digite a Senha:" en="Ingrese la clave:" />
+  <Mensaje key="Ingrese la contraseña" pt="Digite a Senha" en="Ingrese la contraseña" />
+  <Mensaje key="Causa de cierre" pt="Motivo de Fechamento" en="Causa de cierre" />
+  <Mensaje key="Opción" pt="Opção" en="Opción" />
+  <Mensaje key="Ingrese código de cajero" pt="Digite Código de Arrecadador" en="Ingrese código de cajero" />
+  <Mensaje key="Ingrese el código de cajero:" pt="Digite o Código do Arrecadador:" en="Ingrese el código de cajero:" />
+  <Mensaje key="Ingrese la clave:" pt="Digite a Senha:" en="Ingrese la clave:" />
+  <Mensaje key="Ingrese la contraseña" pt="Digite a Senha" en="Ingrese la contraseña" />
+  <Mensaje key="Causa de cierre" pt="Motivo de Fechamento" en="Causa de cierre" />
+  <Mensaje key="Menú de Patente" pt="Menú de Placa" en="Menú de Patente" es-EC="Menú de Placa" es-UY="Menú de Matrícula" es-PE="Menú de Placa" />
+  <Mensaje key="Ingrese la patente:" pt="Digite a Placa:" en="Ingrese la patente:" es-EC="Ingrese la placa:" es-UY="Ingrese la matrícula:" es-PE="Ingrese la placa:"/>
+  <Mensaje key="Ingrese la patente" pt="Digite a Placa" en="Ingrese la patente" es-EC="Ingrese la placa" es-UY="Ingrese la matrícula" es-PE="Ingrese la placa"/>
+  <Mensaje key="Categoria Tabulada" pt="Categoria Digitada" en="Categoria Tabulada" />
+  <Mensaje key="Categorizacion Manual" pt="Categorização Manual" en="Categorizacion Manual" />
+  <Mensaje key="Patente:" pt="Placa:" en="Patente:" es-EC="Placa:" es-UY="Matrícula:" es-PE="Placa:"/>
+  <Mensaje key="Número TAG:" pt="Número TAG:" en="Número TAG:" />
+  <Mensaje key="Marca:" pt="Marca:" en="Marca:" />
+  <Mensaje key="Modelo:" pt="Modelo:" en="Modelo:" />
+  <Mensaje key="Color:" pt="Cor:" en="Color:" />
+  <Mensaje key="Nombre:" pt="Nome:" en="Nombre:" />
+  <Mensaje key="Categoría:" pt="Categoría:" en="Categoría:" />
+  <Mensaje key="Ingrese la patente y confirme" pt="Digite a Placa e Confirme" en="Ingrese la patente y confirme" es-EC="Ingrese la placa y confirme" es-UY="Ingrese la matrícula y confirme" es-PE="Ingrese la placa y confirme"/>
+  <Mensaje key="Confirme los datos" pt="Confirme os dados" en="Confirme los datos" />
+  <Mensaje key="Recarga" pt="Recarga" en="Recarga" />
+  <Mensaje key="Nombre:" pt="Nome:" en="Nombre:" />
+  <Mensaje key="Categoría:" pt="Categoría:" en="Categoría:" />
+  <Mensaje key="Patente:" pt="Placa:" en="Patente:" es-EC="Placa:" es-UY="Matrícula:" es-PE="Placa:"/>
+  <Mensaje key="Marca:" pt="Marca:" en="Marca:" />
+  <Mensaje key="Modelo:" pt="Modelo:" en="Modelo:" />
+  <Mensaje key="Color:" pt="Cor:" en="Color:" />
+  <Mensaje key="Seleccione la opción y confirme con {0}" pt="Seleccione la opción y confirme con {0}" en="Seleccione la opción y confirme con {0}" />
+  <Mensaje key="Confirme la recarga de" pt="Confirme a recarga de" en="Confirme la recarga de" />
+  <Mensaje key="Prepago" pt="Pre-pago" en="Prepago" />
+  <Mensaje key="Prepago" pt="Pre-pago" en="Prepago" />
+  <Mensaje key="Causa de cierre" pt="Motivo de Fechamento" en="Causa de cierre" />
+  <Mensaje key="Cobro con Factura" pt="Cobrança da Fatura" en="Cobro con Factura" />
+  <Mensaje key="Clave:" pt="Senha:" en="Clave:" />
+  <Mensaje key="RUC:" pt="CNPJ:" en="RUC:" />
+  <Mensaje key="Razón Social:" pt="Razão Social:" en="Razón Social:" />
+  <Mensaje key="Clientes:" pt="Clientes:" en="Clientes:" />
+  <Mensaje key="Ingrese la clave de cliente" pt="Digite a senha do Cliente" en="Ingrese la clave de cliente" />
+  <Mensaje key="COBRO CON FACTURA" pt="COBRANÇA COM FATURA" en="COBRO CON FACTURA" />
+  <Mensaje key="CLAVE:" pt="SENHA:" en="CLAVE:" />
+  <Mensaje key="RUC:" pt="CNPJ:" en="RUC:" />
+  <Mensaje key="RAZÓN SOCIAL:" pt="RAZÃO SOCIAL:" en="RAZÓN SOCIAL:" />
+  <Mensaje key="CLIENTES:" pt="CLIENTES:" en="CLIENTES:" />
+  <Mensaje key="Ingrese la clave de cliente" pt="Digite a Senha do Cliente" en="Ingrese la clave de cliente" />
+  <Mensaje key="Consultando datos..." pt="Procurando dados..." en="Consultado datos..." />
+  <Mensaje key="Confirme los datos seleccionados" pt="Confirme os dados selecionados" en="Confirme los datos seleccionados" />
+  <Mensaje key="Efectivo" pt="Dinheiro" en="Efectivo" />
+  <Mensaje key="Causa de cierre" pt="Motivo de Fechamento" en="Causa de cierre" />
+  <Mensaje key="Causa de Simulación" pt="Motivo da SIMULAÇÃO" en="CAUSA DE SIMULACIÓN" />
+  <Mensaje key="Vía Lista para Operar" pt="Pista pronta para Operar" en="Vía Lista para Operar" />
+  <Mensaje key="Actualizar" pt="Atualizar" en="Update" />
+
+  <Mensaje key="No se puede cancelar con el lazo ocupado" pt="Não é possível cancelar com o loop ocupado" en="No se puede cancelar con el lazo ocupado" />
+  <Mensaje key="Esta acción no se permite en Modo Mantenimiento" pt="Esta ação não é permitida no Modo Manutenção" en="Esta acción no se permite en Modo Mantenimiento" />
+  <Mensaje key="Cobrar en Efectivo con Tecla VIAJE o realizar RECARGA" pt="Cobrar em Dinheiro com a Chave VIAGEM o realizar RECARGA" en="Cobrar en Efectivo con Tecla VIAJE o realizar RECARGA" />
+  <Mensaje key="Cobrar en Efectivo con Tecla VIAJE" pt="Cobrar em Dinheiro com a Chave VIAGEM" en="Cobrar en Efectivo con Tecla VIAJE" />
+  <Mensaje key="Inicio de Quiebre" pt="Inicio do Quiebre" en="Inicio de Quiebre" />
+  <Mensaje key="No se pudo determinar el nivel de acceso del usuario" pt="Não foi possível determinar o nível de acesso do usuário" en="No se pudo determinar el nivel de acceso del usuario" />
+  <Mensaje key="La numeración debe ser verificada por un técnico" pt="A numeração deve ser verificada por um técnico" en="La numeración debe ser verificada por un técnico" />
+  <Mensaje key="Vía no inicializada, debe conectarse al servidor de la plaza" pt="Via não inicializada, deve-se conectar ao servidor da praça" en="Vía no inicializada, debe conectarse al servidor de la plaza" />
+  <Mensaje key="FECHA DE VENCIMIENTO SUPERADA" pt="DATA DE VALIDADE EXCEDIDA" en="FECHA DE VENCIMIENTO SUPERADA" />
+  <Mensaje key="Version con vencimiento" pt="Versão com expiração" en="Version con vencimiento" />
+  <Mensaje key="COLOQUE UNA LLAVE DE PROTECCIÓN" pt="COLOCAR UMA CHAVE DE PROTEÇÃO" en="COLOQUE UNA LLAVE DE PROTECCIÓN" />
+  <Mensaje key="Via sin llave de protección" pt="Pista sem chave de proteção" en="Via sin llave de protección" />
+  <Mensaje key="Validando llave protección..." pt="Validando chave de proteção..." en="Validando llave protección..." />
+
+  <Mensaje key="Vía no inicializada" pt="Pista não inicializada" en="Vía no inicializada" />
+  <Mensaje key="Vía ya esta abierta" pt="Pista já esta aberta" en="Vía ya esta abierta" />
+  <Mensaje key="Vía opuesta abierta" pt="Pista oposta aberta" en="Vía opuesta abierta" />
+  <Mensaje key="Vía ya esta cerrada" pt="Pista já Fechada" en="Vía ya esta cerrada" />
+  <Mensaje key="Vía debe estar cerrada" pt="A Pista deve estar fechada" en="Vía debe estar cerrada" />
+  <Mensaje key="Vía no esta abierta" pt="A Pista não está aberta" en="Vía no esta abierta" />
+  <Mensaje key="Cajero sin parte asignado" pt="Caixe sem prestação atribuida" en="Cajero sin parte asignado" />
+  <Mensaje key="No se puede realizar operación con Vía Cerrada" pt="Não e possível façer a operação com a Pista Fechada" en="No se puede realizar operación con Vía Cerrada" />
+  <Mensaje key="Primero debe devolver el fondo de cambio" pt="Deve devolver a atribução primeiro" en="Primero debe devolver el fondo de cambio" />
+  <Mensaje key="Fondo no entregado" pt="Atribução nã entregue" en="Fondo no entregado" />
+  <Mensaje key="No se puede cerrar turno con vehículos pagados" pt="Não e possível fechar o turno com veículos pagados" en="No se puede cerrar turno con vehículos pagados" />
+  <Mensaje key="No se puede cerrar turno con barrera abierta" pt="Não e possível fechar o turno con a cancela aberta" en="No se puede cerrar turno con barrera abierta" />
+  <Mensaje key="Modo de Vía No Permite esta operación" pt="Modo da Pista não permite a operação" en="Modo de Vía No Permite esta operación" />
+  <Mensaje key="Espere a que avance vehículo anterior" pt="Aguarde a que o veículo previo avance" en="Espere a que avance vehículo anterior" />
+  <Mensaje key="Vehículo No Categorizado" pt="Veículo Não Categorizado" en="Vehículo No Categorizado" />
+  <Mensaje key="Vehículo Sin Patente" pt="Veículo sem Placa" en="Vehículo Sin Patente" es-EC="Vehículo Sin Placa" es-UY="Vehículo Sin Matrícula" es-PE="Vehículo Sin Placa"/>
+  <Mensaje key="Vehículo No Habilitado" pt="Veículo Não Habilitado" en="Vehículo No Habilitado" />
+  <Mensaje key="Cambio de Tarifa" pt="Mudança de Tarifa" en="Cambio de Tarifa" />
+  <Mensaje key="Próximo Cambio de Jornada" pt="Seguinte Mudança de Día" en="Próximo Cambio de Jornada" />
+  <Mensaje key="Cambio de Jornada" pt="Mudança de Día" en="Cambio de Jornada" />
+  <Mensaje key="El modo de apertura no permite exentos" pt="O Modo de abertura não permite Isentos" en="El modo de apertura no permite exentos" />
+  <Mensaje key="Primer vehículo no esta pagado" pt="Primer veículo não esta pago" en="Primer vehículo no esta pagado" />
+  <Mensaje key="Primer vehículo ya esta pagado" pt="Primer veículo já esta pago" en="Primer vehículo ya esta pagado" />
+  <Mensaje key="Esta ocupado el bucle de salida" pt="Esta ocupado o detector de saída" en="Esta ocupado el bucle de salida" />
+  <Mensaje key="Estamos en una venta" pt="Estamos nuna venda" en="Estamos en una venta" />
+  <Mensaje key="Operación no permitida en Modo Quiebre" pt="Operação não permitida en Modo Quiebre" en="Operación no permitida en Modo Quiebre" />
+  <Mensaje key="No se corresponden la categoría con la forma de pago" pt="Não se corresponden a categoría com a forma de pagamento" en="No se corresponden la categoría con la forma de pago" />
+  <Mensaje key="Usuario Erroneo" pt="Usuario Errado" en="Usuario Erroneo" />
+  <Mensaje key="Password Erroneo" pt="Senha Errada" en="Password Erroneo" />
+  <Mensaje key="Combinacion Usuario/Password Erronea" pt="Combinação Usuario/Senha Errada" en="Combinacion Usuario/Password Erronea" />
+  <Mensaje key="Nuevo Usuario (sin password)" pt="Novo Usuario (sem senha)" en="Nuevo Usuario (sin password)" />
+  <Mensaje key="Password Vencido" pt="Senha Vencida" en="Password Vencido" />
+  <Mensaje key="Vehículo con Tag Asignado" pt="Veículo com Tag Atribuido" en="Vehículo con Tag Asignado" />
+  <Mensaje key="Barrera Está Abierta" pt="A Cancela está Aberta" en="Barrera Está Abierta" />
+
+
+  <Mensaje key="Barrera Está Cerrada" pt="A Cancela está Fechada" en="Barrera Está Cerrada" />
+  <Mensaje key="Confirme Cierre de Barrera" pt="Confirme Fechar a Cancela" en="Confirme Cierre de Barrera" />
+  <Mensaje key="Nivel de usuario no permite la operación" pt="Nível de usuario não permite a operação" en="Nivel de usuario no permite la operación" />
+  <Mensaje key="Modo Sin Cajero" pt="Modo Sem Arrecadador" en="Modo Sin Cajero" />
+  <Mensaje key="No se permite Liquidación en la via" pt="Não é permitido o Lançamento na Pista" en="No se permite Liquidación en la via" />
+  <Mensaje key="Tag Leido" pt="Tag Lído" en="Tag Leido" />
+  <Mensaje key="Tag Sin Saldo" pt="Tag Sem Saldo" en="Tag Sin Saldo" />
+  <Mensaje key="Tag No Habilitado" pt="Tag Não Habilitado" en="Tag No Habilitado" />
+  <Mensaje key="Usuario debe ser Supervisor" pt="Usuario deve ser Supervisor" en="Usuario debe ser Supervisor" />
+  <Mensaje key="No se encuentra en modo Quiebre Liberado" pt="Não se acha no Modo Quiebre Liberado" en="No se encuentra en modo Quiebre Liberado" />
+  <Mensaje key="Quiebre de barrera ya iniciado" pt="Quiebre já iniciado" en="Quiebre de barrera ya iniciado" />
+  <Mensaje key="Quiebre de barrera no iniciado" pt="Quiebre não iniciado" en="Quiebre de barrera no iniciado" />
+  <Mensaje key="Debe indicar los datos del cliente" pt="Deve indicar os dados do cliente" en="Debe indicar los datos del cliente" />
+  <Mensaje key="Cliente no encontrado" pt="Cliente não achado" en="Cliente no encontrado" />
+  <Mensaje key="No hay datos del tag" pt="Não á dados do tag" en="No hay datos del tag" />
+  <Mensaje key="Usuario debe ser técnico" pt="Usuario deve ser técnico" en="Usuario debe ser técnico" />
+  <Mensaje key="Retiro Realizado" pt="Retiro Realizado" en="Retiro Concluido" />
+  <Mensaje key="Fondo de Cambio Devuelto" pt="Atirbução Retornada" en="Fondo de Cambio Devuelto" />
+  <Mensaje key="El Fondo de Cambio ya fue devuelto" pt="O Fundo de Câmbio já foi devolvido" en="El Fondo de Cambio ya fue devuelto" />
+  <Mensaje key="Pagado Efectivo" pt="Pago em Dinheiro" en="Pagado Efectivo" />
+
+
+  <Mensaje key="Pagado en Via" pt="Pago na Pista" en="Pagado en Via" />
+  <Mensaje key="Pagado Factura" pt="Pago Fatura" en="Pagado Factura" />
+  <Mensaje key="Pagado Exento" pt="Pago Isento" en="Pagado Exento" />
+  <Mensaje key="Pagado Placa Manual" pt="Pago Tag Manual" en="Pagado Tag Manual" />
+  <Mensaje key="No hay vehiculo para observar" pt="Não ha veículo para observar" en="No hay vehiculo para observar" />
+  <Mensaje key="Patente sin tag asociado" pt="Placa sem tag associado" en="Patente sin tag asociado" es-EC="Placa sin tag asociado" es-UY="Matrícula sin tag asociado" es-PE="Placa sin tag asociado"/>
+  <Mensaje key="Error en la búsqueda de patente, intente de nuevo" pt="Erro na pesquisa da placa, tente novamente" en="Error en la búsqueda de patente, intente de nuevo" es-EC="Error en la búsqueda de placa, intente de nuevo" es-UY="Error en la búsqueda de matrícula, intente de nuevo" es-PE="Error en la búsqueda de placa, intente de nuevo"/>
+  <Mensaje key="Error buscando información del Tag" pt="Erro ao procurar informações da tag" en="Error buscando información del Tag" />
+  <Mensaje key="Modelo no permite este modo" pt="Modelo não permite este modo" en="Modelo no permite este modo" />
+  <Mensaje key="Runner asignado hace más de 24 hs" pt="Runner atribuido á mais de 24 hs" en="Runner asignado hace más de 24 hs" />
+  <Mensaje key="Inicio de gestion tarifaria" pt="Inicio da gestão tarifaria" en="Inicio de gestion tarifaria" />
+  <Mensaje key="Gestion tarifaria finalizada" pt="Gestão tarifaria acabada" en="Gestion tarifaria finalizada" />
+  <Mensaje key="DEBE ABRIR LA VÍA PARA COBRAR" pt="DEVE ABRIR A PISTA PARA COBRAR" en="DEBE ABRIR LA VÍA PARA COBRAR" />
+  <Mensaje key="Debe cambiar de Caja" pt="Deve mudar de Caixa" en="Debe cambiar de Caja" />
+  <Mensaje key="Final de Jornada" pt="Final do Día" en="Final de Jornada" />
+  <Mensaje key="Cambio de Bloque Realizado" pt="Mudança de Turno Concluida" en="Cambio de Bloque Realizado" />
+  <Mensaje key="Reabrir Por Cambio de Jornada" pt="Reabrir por Mudança de Día" en="Reabrir Por Cambio de Jornada" />
+  <Mensaje key="Reabrir Por Cambio de Tarifa" pt="Reabrir por Mudança de Tarifa" en="Reabrir Por Cambio de Tarifa" />
+  <Mensaje key="Método de pago no valido" pt="Meio de pagamento não válido" en="Método de pago no valido" />
+  
+  <Mensaje key="Error en la búsqueda de tarifa, intente de nuevo" pt="Erro na pesquisa da Tarifa, tente novamente" en="Error en la búsqueda de tarifa, intente de nuevo" />
+  
+
+  <Mensaje key="Final Turno" pt="Final Turno" en="Final Turno" />
+  <Mensaje key="Colacion" pt="Lanche" en="Colacion" />
+  <Mensaje key="Mantenimiento" pt="Manutenção" en="Colacion" />
+  <Mensaje key="Quiebre Liberado" pt="Quiebre Liberado" en="Quiebre Liberado" />
+  <Mensaje key="Fin Quiebre Liberado" pt="Fim Quiebre Liberado" en="Fin Quiebre Liberado" />
+  <Mensaje key="Cambio de Jornada" pt="Mudança de Día" en="Cambio de Jornada" />
+  <Mensaje key="Cambio de Responsable" pt="Mudança de Responsavel" en="Cambio de Responsable" />
+  <Mensaje key="Reincio" pt="Reincio" en="Reincio" />
+  <Mensaje key="Cambio de Tarifa" pt="Mudança de Tarifa" en="Cambio de Tarifa" />
+  <Mensaje key="Fin Gestion de Trafico" pt="Fim Gestão de Trafico" en="Fin Gestion de Trafico" />
+  <Mensaje key="Inicio Gestion de Trafico" pt="Inicio Gestion de Tráfego" en="Inicio Gestion de Trafico" />
+  <Mensaje key="Arqueo" pt="Contagem" en="Arqueo" />
+  <Mensaje key="Liquidacion Final" pt="Lançamento Final" en="Liquidacion Final" />
+
+  <Mensaje key="Menú" pt="Menú" en="Menú" />
+  <Mensaje key="Apertura de Turno Automática" pt="Abertura de Turno Automática" en="Apertura de Turno Automática" />
+  <Mensaje key="Apertura de Turno" pt="Abertura de Turno" en="Apertura de Turno" />
+  <Mensaje key="Apertura de Turno (Mant)" pt="Abertura de Turno (Manutenção)" en="Apertura de Turno (Mant)" />
+  <Mensaje key="Apertura de Turno (Sup)" pt="Abertura de Turno (Supervisor)" en="Apertura de Turno (Sup)" />
+  <Mensaje key="Causa de Cierre" pt="Motivo de Fechamento" en="Causa de Cierre" />
+  <Mensaje key="Exento" pt="Isento" en="Exento" />
+  <Mensaje key="Causa de Simulación" pt="Motivo de Simulação" en="Causa de Simulación" />
+  <Mensaje key="Causa de Cancelación" pt="Motivo de Cancelação" en="Causa de Cancelación" />
+  <Mensaje key="Causa de Sube Barrera" pt="Motivo de Levantar Cancela" en="Causa de Sube Barrera" />
+  <Mensaje key="Observación" pt="Observação" en="Observación" />
+  <Mensaje key="Observacion Violación" pt="Observação Violação" en="Observacion Violación" />
+  <Mensaje key="Retiro" pt="Sangría" en="Retiro" />
+  <Mensaje key="Seleccion de Denominación" pt="Seleção de Denominação" en="Seleccion de Denominación" />
+  <Mensaje key="Fondo de Cambio" pt="Atirbução" en="Fondo de Cambio" />
+  <Mensaje key="Liquidación" pt="Lançamento" en="Liquidación" />
+  <Mensaje key="Quiebre Liberado" pt="Quiebre Liberado" en="Quiebre Liberado" />
+  <Mensaje key="Cambio de Password" pt="Mudança da Senha" en="Cambio de Password" />
+  <Mensaje key="Mensajes a Supervisión" pt="Mensagens a Supervisão" en="Mensajes a Supervisión" />
+  <Mensaje key="Venta/Recarga" pt="Venda/Recarga" en="Venta/Recarga" />
+  <Mensaje key="Recarga" pt="Recarga" en="Recarga" />
+  <Mensaje key="Apertura Turno Técnico" pt="Abertura Turno Técnico" en="Apertura Turno Técnico"/>
+  <Mensaje key="Cancelar Recarga" pt="Cancelar Recarga" en="Cancelar Recarga" />
+  <Mensaje key="Apertura Turno Supervisor" pt="Abertura Turno Supervisor" en="Apertura Turno Supervisor" />
+  <Mensaje key="Cancelar Tag Pago" pt="Cancelar Tag Pago" en="Cancelar Tag Pago" />
+  <Mensaje key="Placa Manual" pt="Tag Manual" en="Tag Manual" />
+  <Mensaje key="Reinicar Vía" pt="Reinicar Pista" en="Reinicar Vía" />
+  <Mensaje key="Bajar Barrera" pt="Abaixar Cancela" en="Bajar Barrera" />
+  <Mensaje key="Impresión de Totales" pt="Impresaão dos Totais" en="Impresión de Totales" />
+  <Mensaje key="Ingreso de Vía y Estación" pt="Ingresso de Pista e Praça" en="Ingreso de Vía y Estación" />
+  <Mensaje key="Lista de Símbolos" pt="Listagem de Símbolos" en="Lista de Símbolos" />
+  <Mensaje key="Elegir otra Forma de Pago" pt="Escolha outra forma de pagamento" en="Elegir otra Forma de Pago" />
+  <Mensaje key="Confirmar pago con Tarjeta Chip" pt="Confirme o pagamento com cartão com chip" en="Confirmar pago con Tarjeta Chip" />
+  <Mensaje key="Confirmar simulación de tránsito" pt="Confirme a simulação de tráfego" en="Confirmar simulación de tránsito" />
+
+  <Mensaje key="Sin Falla" pt="Sem Falha" en="Sin Falla" />
+  <Mensaje key="Tapa Abierta" pt="Tampa Aberta" en="Tapa Abierta" />
+  <Mensaje key="Sin Papel" pt="Sem Papel" en="Sin Papel" />
+  <Mensaje key="Poco Papel" pt="Pouco Papel" en="Poco Papel" />
+  <Mensaje key="Sin Comunicacion" pt="Sem Comunicação" en="Sin Comunicacion" />
+  <Mensaje key="Error Mecanico" pt="Erro Mecanico" en="Error Mecanico" />
+  <Mensaje key="Cajon Abierto" pt="Gabeta Aberta" en="Cajon Abierto" />
+  <Mensaje key="Memoria Fiscal" pt="Memoria Fiscal" en="Memoria Fiscal" />
+  <Mensaje key="Memoria Trabajo" pt="Memoria Trabalho" en="Memoria Trabajo" />
+  <Mensaje key="Comando Desconocido" pt="Comando Desconhecido" en="Comando Desconocido" />
+  <Mensaje key="Campo Datos Invalido" pt="Campo Dados Invalido" en="Campo Datos Invalido" />
+  <Mensaje key="Comando Invalido" pt="Comando Inválido" en="Comando Invalido" />
+  <Mensaje key="Desborde Acumulador" pt="Estorou o Acumulador" en="Desborde Acumulador" />
+  <Mensaje key="Memoria Fiscal Llena" pt="Memoria Fiscal Completa" en="Memoria Fiscal Llena" />
+  <Mensaje key="Memoria Fiscal Casi Llena" pt="Memoria Fiscal Cuasi Completa" en="Memoria Fiscal Casi Llena" />
+  <Mensaje key="Terminal Certificada" pt="Terminal Certificado" en="Terminal Certificada" />
+  <Mensaje key="Terminal Fiscalizada" pt="Terminal Fiscalizado" en="Terminal Fiscalizada" />
+  <Mensaje key="Documento Fiscal Abierto" pt="Documento Fiscal Aberto" en="Documento Fiscal Abierto" />
+  <Mensaje key="Documento Abierto" pt="Documento Aberto" en="Documento Abierto" />
+  <Mensaje key="Necesito Z" pt="Preciso Z" en="Necesito Z" />
+  <Mensaje key="Timeout" pt="Timeout" en="Timeout" />
+
+  <Mensaje key="Seleccione una opcion" pt="Digite uma opção" en="Seleccione una opcion" />
+  <Mensaje key="Ingrese el RUC" pt="Digite o CNPJ" en="Ingrese el RUC" />
+  <Mensaje key="Ingrese la Razon Social" pt="Digite a Razão Social" en="Ingrese la Razon Social" />
+  <Mensaje key="Confirme la opcion elegida" pt="Confirme a opção digitada" en="Confirme la opcion elegida" />
+
+  <Mensaje key="Retiro anticipado" pt="Sangría" en="Retiro anticipado" />
+  <Mensaje key="Cajero:" pt="Arrecadador:" en="Cajero:" />
+  <Mensaje key="Parte:" pt="Prestação:" en="Parte:" />
+  <Mensaje key="Importe a retirar:" pt="Valor a retirar:" en="Importe a retirar:" />
+  <Mensaje key="Número de bolsa:" pt="Número de Malote:" en="Número de bolsa:" />
+  <Mensaje key="Número de precinto:" pt="Número de selo:" en="Número de precinto:" />
+  <Mensaje key="Ingrese el importe a retirar y confirme" pt="Digite o valor a retirar e confirme" en="Ingrese el importe a retirar y confirme" />
+  <Mensaje key="Confirme los datos ingresados" pt="Confirme os dados digitados" en="Confirme los datos ingresados" />
+  <Mensaje key="Ingreso de Placa manual" pt="Ingresso do TAG manual" en="Ingreso de TAG manual" />
+
+  <Mensaje key="Menú de Foto" pt="Menú de Foto" en="Menú de Foto" />
+  <Mensaje key="Confirme la foto" pt="Confirme a foto" en="Confirme la foto" />
+  <Mensaje key="Monto a recargar:" pt="Valor a recargar:" en="Monto a recargar:" />
+  <Mensaje key="Otros" pt="Outros" en="Otros" />
+  <Mensaje key="Ingrese el monto a recargar y confirme" pt="Digite o monto a recargar e confirme" en="Ingrese el monto a recargar y confirme" />
+
+  <Mensaje key="Confirme la recarga de" pt="Confirme a recarga de" en="Confirme la recarga de" />
+  <Mensaje key="Denominaciones:" pt="Denominações:" en="Denominaciones:" />
+  <Mensaje key="Importe:" pt="Valor:" en="Importe:" />
+  <Mensaje key="Bolsa:" pt="Malote:" en="Bolsa:" />
+  <Mensaje key="Observación:" pt="Observação:" en="Observación:" />
+  <Mensaje key="Sin Parte" pt="Sem Prestação" en="Sin Parte" />
+  <Mensaje key="Precinto:" pt="Selo:" en="Precinto:" />
+
+  <Mensaje key="Chequeando status impresora..." pt="Verificando status impressora..." en="Chequeando status impresora..." />
+  <Mensaje key="Impresora OK" pt="Impressora OK" en="Impresora OK" />
+  <Mensaje key="Transito Simulado" pt="Trânsito Simulado" en="Transito Simulado" />
+  <Mensaje key="Causa" pt="Motivo" en="Causa" />
+  <Mensaje key="Se Asignó la Observación" pt="A Observação foi atribuida" en="Se Asignó la Observación" />
+
+  <Mensaje key="Cambia Semáforo de Marquesina a" pt="Muda Semáforo de Marquisa a" en="Cambia Semáforo de Marquesina a" />
+  <Mensaje key="Rojo" pt="Vermelho" en="Rojo" />
+  <Mensaje key="Verde" pt="Verde" en="Verde" />
+  <Mensaje key="Se realizó una carga por {0} - Saldo Final: {1}" pt="Foi feita uma carga por {0} - Saldo Final: {1}" en="Se realizó una carga por {0} - Saldo Final: {1}" />
+  <Mensaje key="Saldo" pt="Saldo" en="Saldo" />
+  <Mensaje key="Saldo Inicial" pt="Saldo Inicial" en="Saldo Inicial" />
+  <Mensaje key="Transito Abortado" pt="Trânsito Abortado" en="Transito Abortado" />
+
+  <Mensaje key="No existen modos de apertura" pt="Não há modos de abertura" en="No existen modos de apertura" />
+  <Mensaje key="No existen causas de cierre" pt="Não há motivos de fechamento" en="No existen causas de cierre" />
+  <Mensaje key="Error Impresora" pt="Error Impressora" en="Error Impresora" />
+  <Mensaje key="Nuevo cliente grabado" pt="Novo cliente gravado" en="Nuevo cliente grabado" />
+  <Mensaje key="No pudo grabarse nuevo cliente" pt="Não foi possível gravar o novo cliente" en="No pudo grabarse nuevo cliente" />
+  <Mensaje key="No existen causas de simulacion" pt="Não há motivos de simulação" en="No existen causas de simulacion" />
+  <Mensaje key="No existen causas de cancelacion" pt="Não há motivos de cancelação" en="No existen causas de cancelacion" />
+  <Mensaje key="No se encontro el tipo de exento" pt="Não se encontro o tipo de Isento" en="No se encontro el tipo de exento" />
+  <Mensaje key="No se encontraron exentos" pt="Não se encontraron Isentos" en="No se encontraron exentos" />
+  <Mensaje key="No se encontraron causas de apertura de barrera" pt="Não foram encontrados motivos de abertura de cancela" en="No se encontraron causas de apertura de barrera" />
+  <Mensaje key="Causa Sube Barrera" pt="Motivo Levantar Cancela" en="Causa Sube Barrera" />
+  <Mensaje key="Error en evento de fondo de cambio" pt="Erro no ocorrência da atribução" en="Error en evento de fondo de cambio" />
+  <Mensaje key="No se encontraron Monedas" pt="Não foram encontradas Moedas" en="No se encontraron Monedas" />
+  <Mensaje key="No se encontraron denominaciones" pt="Não foram encontradas denominações" en="No se encontraron denominaciones" />
+  <Mensaje key="Error al enviar evento de retiro anticipado" pt="Erro ao enviar a ocorrência da samgría" en="Error al enviar evento de retiro anticipado" />
+  <Mensaje key="No pudo realizarse la liquidación" pt="Não foi possível concluir o lançamento" en="No pudo realizarse la liquidación" />
+  <Mensaje key="Liquidación realizada por: " pt="Lançado por: " en="Liquidación realizada por: " />
+  <Mensaje key="No se pudo obtener runner actual" pt="Não foi possível obter o runner atual" en="No se pudo obtener runner actual" />
+  <Mensaje key="No se encontraron observaciones" pt="Não foram encontradas observações" en="No se encontraron observaciones" />
+  <Mensaje key="No se encontraron mensajes a supervisión" pt="Não foram encontrados mensagens na supervisão" en="No se encontraron mensajes a supervisión" />
+  <Mensaje key="Error enviando mensaje a supervisión" pt="Erro enviando a mensagem na supervisão" en="Error enviando mensaje a supervisión" />
+  <Mensaje key="Enviado a supervisión" pt="Enviado na supervisão" en="Enviado a supervisión" />
+  <Mensaje key="Confirmada la numeración actual" pt="Confirmada a numeração atual" en="Confirmada la numeración actual" />
+  <Mensaje key="Puede abrir el turno" pt="Você pode abrir o turno" en="Puede abrir el turno" />
+  <Mensaje key="No confirmada la numeración actual" pt="Não confirmada a numeração atual" en="No confirmada la numeración actual" />
+  <Mensaje key="ABRIENDO TESTEO..." pt="ABRINDO TESTEO..." en="ABRIENDO TESTEO..." />
+  <Mensaje key="REINICIANDO TERMINAL..." pt="REINICIANDO TERMINAL..." en="REINICIANDO TERMINAL..." />
+  <Mensaje key="APAGANDO TERMINAL..." pt="DESLIGANDO TERMINAL..." en="APAGANDO TERMINAL..." />
+  <Mensaje key="CERRANDO SESIÓN..." pt="FECHANDO SESIÓN..." en="CERRANDO SESIÓN..." />
+  
+  <Mensaje key="Nivel de acceso no válido" pt="Nível de acesso não válido" en="Nivel de acceso no válido" />
+  <Mensaje key="No se encontraron recargas posibles" pt="Não foram encontradas recargas possiveis" en="No se encontraron recargas posibles" />
+  <Mensaje key="Saldo deudor supera el máximo de recargas" pt="O saldo da dívida excede as recargas máximas" en="Saldo deudor supera el máximo de recargas"/>
+  <Mensaje key="Valor a recargar debe ser mayor a " pt="Valor a recargar deve ser maior a " en="Valor a recargar debe ser mayor a " />
+  <Mensaje key="Valor a recargar debe ser menor a " pt="Valor a recargar deve ser menor a " en="Valor a recargar debe ser menor a " />
+  <Mensaje key="Imprimiendo Encabezado..." pt="Imprimindo Cabezalho..." en="Imprimiendo Encabezado..." />
+  <Mensaje key="Se imprimieron los Totales" pt="Os Totais foram impressos" en="Se imprimieron los Totales" />
+  <Mensaje key="Timeout de la consulta" pt="Timeout da consulta" en="Timeout de la consulta" />
+  <Mensaje key="No se encontraron totales" pt="Não foram encontrados totais" en="No se encontraron totales" />
+  <Mensaje key="No se pudo obtener operador" pt="Não foi possível obter Arrecadador" en="No se pudo obtener operador" />
+  <Mensaje key="No pudo grabarse nuevo password" pt="Não foi possível gravar a nova senha" en="No pudo grabarse nuevo password" />
+  <Mensaje key="Confirme nuevamente" pt="Confirme novamente" en="Confirme nuevamente" />
+  <Mensaje key="Error en consulta de numeración, reintente" pt="A consulta de numeração falhou, tente novamente" en="Error en consulta de numeración, reintente" />
+  <Mensaje key="Actualizando la numeración local..." pt="Atualizando a numeração local ..." en="Actualizando la numeración local..." />
+  <Mensaje key="Error en la actualización, reintente" pt="A atualização falhou, tente novamente" en="Error en la actualización, reintente" />
+  
+  <Mensaje key="Comando de supervisión" pt="Comando de supervisão*" en="Comando de supervisión" />
+  <Mensaje key="Comando" pt="Comando" en="Comando" />
+  <Mensaje key="No se pudo obtener runner" pt="Não foi possível obter runner" en="No se pudo obtener runner" />
+  <Mensaje key="Operación no permitida" pt="Operação não permitida" en="Operación no permitida" />
+
+  <Mensaje key="Seleccione un Símbolo" pt="Selecione um Símbolo" en="Seleccione un Símbolo" />
+  <Mensaje key="Confirme la operación" pt="Confirme a operação" en="Confirme la operación" />
+  <Mensaje key="Está seguro que desea confirmar?" pt="Certeza que deseja confirmar?" en="Está seguro que desea confirmar?" />
+  <Mensaje key="Ingrese número de vía" pt="Digite número da pista" en="Ingrese número de vía" />
+  <Mensaje key="Ingrese número de estación" pt="Digite número de praça" en="Ingrese número de estación" />
+  <Mensaje key="Confirme la numeración" pt="Confirme a numeração" en="Confirme la numeración" />
+  <Mensaje key="Numeración de la estación" pt="Numeração de estação" en="Numeración de la estación" />
+  <Mensaje key="Numeración almacenada localmente" pt="Numeração armazenada localmente" en="Numeración almacenada localmente" />
+  <Mensaje key="Ingrese la contraseña nueva" pt="Digite a nova senha" en="Ingrese la contraseña nueva" />
+  <Mensaje key="Reingrese la contraseña" pt="Digite a senha novamente" en="Reingrese la contraseña" />
+  <Mensaje key="Error: ambas contraseñas deben coincidir" pt="Erro: as duas senhas deven coincidir" en="Error: ambas contraseñas deben coincidir" />
+  <Mensaje key="Error: la nueva contraseña debe ser distinta a la actual" pt="Erro: a nova senha deve ser diferente da atual" en="Error: la nueva contraseña debe ser distinta a la actual" />
+  <Mensaje key="Confirme el cambio de contraseña" pt="Confirme a  mudança da senha" en="Confirme el cambio de contraseña" />
+  <Mensaje key="El Ruc ingresado no es valido" pt="O CNPJ digitado não é válido" en="El Ruc ingresado no es valido" />
+  <Mensaje key="Ruc no hallado. Ingrese razon social" pt="CNPJ não encontrado. Digite razão social" en="Ruc no hallado. Ingrese razon social" />
+  <Mensaje key=" caracteres como mínimo" pt=" caracteres como mínimo" en=" caracteres como mínimo" />
+  <Mensaje key="Seleccione cliente de la lista" pt="Escolha um Cliente da lista" en="Seleccione cliente de la lista" />
+  <Mensaje key="Seleccione cliente de la lista, {0} Siguiente pag." pt="Selecione cliente da lista, {0} Próxima pág." en="Seleccione cliente de la lista, {0} Siguiente pag." />
+  <Mensaje key="Pagina Siguiente..." pt="Próxima Página..." en="Pagina Siguiente..." />
+  <Mensaje key="Formato de patente incorrecto" pt="Formato da placa não válido" en="Formato de patente incorrecto" es-EC="Formato de placa incorrecto" es-UY="Formato de matrícula incorrecto" es-PE="Formato de placa incorrecto"/>
+  <Mensaje key="Confirme la devolución del fondo de cambio" pt="Confirme a devolução da atribução" en="Confirme la devolución del fondo de cambio" />
+  <Mensaje key="Ingrese cantidad de denominacion y confirme" pt="Digite quantidade da denominação e confirme" en="Ingrese cantidad de denominacion y confirme" />
+  <Mensaje key="Ingrese el número de bolsa y confirme" pt="Digite o número de malote e confirme" en="Ingrese el número de bolsa y confirme" />
+  <Mensaje key="Ingrese el número de precinto y confirme" pt="Digite o número de selo e confirme" en="Ingrese el número de precinto y confirme" />
+  <Mensaje key="Ingrese la observación y confirme" pt="Entre na observação e confirme" en="Ingrese la observación y confirme" />
+  <Mensaje key="Ingrese cantidad de denominacion y confirme con {0}, {1} para volver." pt="Digite quantidade da denominação e confirme com {0}, {1} pra volter." en="Ingrese cantidad de denominacion y confirme con {0}, {1} para volver." />
+  <Mensaje key="Ingrese el número de bolsa y confirme con {0}, {1} para volver." pt="Digite o número de malote e confirme com {0}, {1} pra voltar." en="Ingrese el número de bolsa y confirme con {0}, {1} para volver." />
+  <Mensaje key="Ingrese el número de precinto y confirme con {0},{1} para volver." pt="Digite o número de selo e confirme com {0}, {1} pra voltar." en="Ingrese el número de precinto y confirme con {0}, {1} para volver." />
+  <Mensaje key="Confirme los datos ingresados con {0}, {1} para volver." pt="Confirme os dados ingressados com {0}, {1} pra voltar." en="Confirme los datos ingresados con {0}, {1} para volver." />
+
+  <Mensaje key="TAG DESCONOCIDO" pt="TAG DESCONHECIDO" en="TAG DESCONOCIDO" />
+  <Mensaje key="TAG REPETIDO" pt="TAG REPETIDO" en="TAG REPETIDO" />
+  <Mensaje key="Violación" pt="Violação" en="Violación" />
+  
+  <Mensaje key="Abierta" pt="Aberta" en="Abierta" />
+  <Mensaje key="Quiebre" pt="Quiebre" en="Quiebre" />
+  <Mensaje key="Cerrada" pt="Fechada" en="Cerrada" />
+  <Mensaje key="Manual" pt="Manual" en="Manual" />
+  <Mensaje key="MD" pt="MD" en="MD" />
+  <Mensaje key="Dinamico" pt="Dinâmico" en="Dinamico" />
+  <Mensaje key="AVI" pt="AVI" en="AVI" />
+  <Mensaje key="Opuesta" pt="Oposto" en="Opuesta" />
+
+  <Mensaje key="Error En Instancia SQL Local" pt="Erro Local da Instância SQL" en="Error En Instancia SQL Local" />
+  <Mensaje key="Esperando conexión al servidor local..." pt="Aguardando conexão com o servidor local..." en="Esperando conexión al servidor local..." />
+  <Mensaje key="Esto puedo tomar varios segundos..." pt="Isso pode levar alguns segundos..." en="Esto puedo tomar varios segundos..." />
+  <Mensaje key="ERROR PLACA I/O NO DETECTADA" pt="ERRO DA PLACA DE E/S NÃO DETECTADO" en="ERROR PLACA I/O NO DETECTADA" />
+  <Mensaje key="No se puede conectar con servicio de lógica." pt="Não é possível conectar ao serviço lógico" en="No se puede conectar con servicio de lógica." />
+  <Mensaje key="Obteniendo configuración de la estación..." pt="Obtendo configurações da estação..." en="Obteniendo configuración de la estación..." />
+  <Mensaje key="Actualizando datos locales..." pt="Atualizando dados locais..." en="Actualizando datos locales..." />
+
+  <Mensaje key="Ingrese Nueva Contraseña:" pt="Digite a Nova Senha:" en="Ingrese Nueva Contraseña:" />
+  <Mensaje key="Reingrese Nueva Contraseña:" pt="Digite Novamente a Nova Senha:" en="Reingrese Nueva Contraseña:" />
+  
+  <Mensaje key="CC" pt="CC" en="CC" />
+  <Mensaje key="Vale" pt="Vale" en="Vale" />
+  <Mensaje key="Local" pt="Local" en="Local" />
+  <Mensaje key="General" pt="Geral" en="General" />
+  <Mensaje key="UFRE" pt="UFRE" en="UFRE" />
+  <Mensaje key="Ticket Manual" pt="Bilhete Manual" en="Ticket Manual" />
+  <Mensaje key="Pago Diferido" pt="Pagamento Diferido" en="Pago Diferido" />
+  <Mensaje key="Invalido" pt="Inválido" en="Invalido" />
+  <Mensaje key="Transporte" pt="Transporte" en="Transporte" />
+  <Mensaje key="Omnibus" pt="Ônibus" en="Omnibus" />
+  <Mensaje key="Federado" pt="Federado" en="Federado" />
+
+  <Mensaje key="Autorizar Numeración" pt="Autorizar Numeração" en="Autorizar Numeración" />
+  <Mensaje key="Consultar Numeración" pt="Consultar Numeração" en="Consultar Numeración" />
+  <Mensaje key="Verificar Numeración" pt="Verifica Numeração" en="Verificar Numeración" />
+  <Mensaje key="Status de Impresora" pt="Status da Impressora" en="Status de Impresora" />
+  <Mensaje key="Cierre Z" pt="Z" en="Cierre Z" />
+  <Mensaje key="Apertura Modo Automático" pt="Abertura Modo Automático" en="Apertura Modo Automático" />
+  <Mensaje key="Iniciar Quiebre" pt="Iniciar Quebra" en="Iniciar Quiebre" />
+  <Mensaje key="Impresión Encabezado" pt="Impressão Cabeçalho" en="Impresión Encabezado" />
+  <Mensaje key="Comitiva" pt="Comitiva" en="Comitiva" />
+  <Mensaje key="Pago Diferido" pt="Pagamento Diferido" en="Pago Diferido" />
+  <Mensaje key="Autorización de Paso Manual" pt="Autorização de Pagamento em Dinheiro" en="Autorización de Paso Manual" />
+  <Mensaje key="Ticket Manual" pt="Ticket Manual" en="Ticket Manual" />
+  <Mensaje key="Observaciones" pt="Observações" en="Observaciones" />
+  <Mensaje key="Observaciones Violación" pt="Observações Violação" en="Observaciones Violación" />
+  <Mensaje key="Observaciones Tránsito Anterior" pt="Observações Trânsito Previo" en="Observaciones Tránsito Anterior" />
+  <Mensaje key="Ver/Ocultar cola de vehículos" pt="Ver/Ocultar Fila de Veículos" en="Ver/Ocultar cola de vehículos" />
+  <Mensaje key="Terminar Quiebre" pt="Finalizar Quebra" en="Terminar Quiebre" />
+  <Mensaje key="Modo Mantenimiento" pt="Modo Manutenção" en="Modo Mantenimiento" />
+  <Mensaje key="Abrir Testeo" pt="Abrir Teste" en="Abrir Testeo" />
+  <Mensaje key="Reiniciar Terminal" pt="Reinicar Terminal" en="Reiniciar Terminal" />
+  <Mensaje key="Apagar Terminal" pt="Desligar Terminal" en="Apagar Terminal" />
+  <Mensaje key="Cierre de Sesión" pt="Fechamento da Sessão" en="Cierre de Sesión" />
+  <Mensaje key="Confirmar Numeración" pt="Confirmar Numeração" en="Confirmar Numeración" />
+  <Mensaje key="Abrir Vía" pt="Abrir Pista" en="Abrir Vía" />
+  <Mensaje key="Imprimir Totales" pt="Imprimir Totais" en="Imprimir Totales" />
+  <Mensaje key="Imprimir Totales Otro Turno" pt="Imprimir Totais outro Turno" en="Imprimir Totales Otro Turno" />
+  <Mensaje key="Consulta de Deuda" pt="Consulta de Dívida" en="Consulta de Deuda" />
+  <Mensaje key="Otros Valores" pt="Outros Valores" en="Otros Valores" />
+  
+  <Mensaje key="Liberado" pt="Liberado" en="Liberado" />
+  <Mensaje key="Devolución Fondo de Cambio" pt="Reembolso do Atribução" en="Devolución Fondo de Cambio" />
+  <Mensaje key="Retiro Anticipado" pt="Sangría Antecipado" en="Retiro Anticipado" />
+
+  <Mensaje key="Numeración" pt="Numeração" en="Numeración" />
+  <Mensaje key="Último Bloque:" pt="Último Bloco:" en="Último Bloque:" />
+  <Mensaje key="Último Transito:" pt="Último Trânsito:" en="Último Transito:" />
+  <Mensaje key="Último Ticket:" pt="Último Ticket:" en="Último Ticket:" />
+  <Mensaje key="Origen Datos:" pt="Origem dos Dados:" en="Origen Datos:" />
+
+  <Mensaje key="Enviado" pt="Enviado" en="Enviado" />
+  <Mensaje key="Ingrese la Categoría" pt="Digite a Categoria" en="Ingrese la Categoría" />
+
+  <Mensaje key="Autorización de Paso" pt="Autorização de Passe" en="Autorización de Paso" />
+  <Mensaje key="Ingrese el código de barras:" pt="Digite o código de barras:" en="Ingrese el código de barras:" />
+  <Mensaje key="Ingrese el código y confirme con {0}, {1} para volver." pt="Digite o código e confirme com {0}, {1} pra volter." en="Ingrese el código y confirme con {0}, {1} para salir." />
+  <Mensaje key="Confirme el código con {0}, {1} para volver." pt="Confirme o código com {0}, {1} pra volter." en="Confirme el código con {0}, {1} para salir." />
+  <Mensaje key="Máximo {0} digitos" pt="Máximo de {0} digitos" en="Máximo {0} digitos" />
+  <Mensaje key="{0} caracteres como mínimo" pt="Mínimo de {0} caracteres" en="{0} caracteres como mínimo" />  
+  <Mensaje key="Abrir Barrera" pt="Abaixar Cancela" en="Abrir Barrera" />
+  <Mensaje key="Supervision" pt="Supervisão" en="Supervision" />
+  <Mensaje key="Cambiar Semáforo de Marquesina" pt="Muda Semáforo de Marquisa" en="Cambiar Semáforo de Marquesina" />
+  <Mensaje key="Cerrar Vía" pt="Fechar Pista" en="Cerrar Vía" />
+  
+  <Mensaje key="Formato de patente erroneo" pt="Formato de placa incorreto" en="Wrong plate format" es-EC="Formato de placa erroneo" es-UY="Formato de placa erroneo" es-PE="Formato de placa erroneo"/>
+  <Mensaje key="Ingrese la patente nuevamente" pt="Digite a patente novamente" en="Enter the plate again" es-EC="Ingrese la placa nuevamente" es-UY="Ingrese la matrícula nuevamente" es-PE="Ingrese la placa nuevamente"/>
+  <Mensaje key="Validez password vacio expirado" pt="Validez password vacio expirado" en="Validez password vacio expirado" />
+  
+  
+  
+  <Mensaje key="Liquidación Final" pt="Liquidação Final" en="Liquidación Final" />
+  <Mensaje key="Ingrese el número de vía:" pt="Digite o número da estrada da pista:" en="Ingrese el número de vía:" />
+  <Mensaje key="Ingrese el número de estación:" pt="Digite o número de praça:" en="Ingrese el número de estación:" />
+  <Mensaje key="SIP" pt="SIMULAÇÃO" en="SIP" />
+  <Mensaje key="ABORTADO" pt="ABORTADO" en="ABORTADO" />
+  <Mensaje key="Otros Montos" pt="Outros Valores" en="Otros Montos" />
+  <Mensaje key="Cerrar Barrera Escape" pt="Cerrar Barrera Escape**" en="Cerrar Barrera Escape" />
+  <Mensaje key="Abrir Barrera Escape" pt="Abrir Barrera Escape**" en="Abrir Barrera Escape" />
+  <Mensaje key="Confirme la recarga de {0} con tecla {1}" pt="Confirme a recarga de {0} com a Chave {0}" en="Confirme la recarga de {0} con tecla {1}" />
+  <Mensaje key="TAG no Prepago" pt="TAG no Pre-pago" en="TAG no Prepago" />
+  <Mensaje key="Fila de Vehículos" pt="Fila de Vehículos**" en="Fila de Vehículos" />
+  <Mensaje key="Tags Leídos:" pt="Tags Leídos:**" en="Tags Leídos:" />
+  <Mensaje key="Esperando cobro de Tag en vía" pt="À espera de recolher a Tag na pista" en="Esperando cobro de Tag en vía" />
+  <Mensaje key="Esperando recarga de Tag sin saldo" pt="Aguardando a recarga do Tag sem saldo" en="Esperando recarga de Tag sin saldo" />
+  <Mensaje key="Presione ESC para cambiar la forma de pago" pt="Pressione ESC para alterar a forma de pagamento" en="Presione ESC para cambiar la forma de pago" />
+  <Mensaje key="Confirme con {0}, {1} para volver." pt="Confirme com {0}, {1} pra volter." en="Confirme con {0}, {1} para volver.**" />
+  <Mensaje key="OCR:" pt="OCR:**" en="OCR:**" />
+  <Mensaje key="OCR" pt="OCR**" en="OCR**" />
+  <Mensaje key="Conectar" pt="Conectar**" en="Conectar**" />
+  <Mensaje key="Desconectar" pt="Desconectar**" en="Desconectar**" />
+  <Mensaje key="Cobro en proceso" pt="Recolha em processo" en="Cobro en proceso**" />
+  <Mensaje key="Exento no registrado" pt="Exento no registrado**" en="Exento no registrado**" />
+  <Mensaje key="Violación en proceso, espere un momento" pt="Estupro em andamento, espere um minuto" en="Violación en proceso, espere un momento**" />
+  <Mensaje key="VÍA SIN ESPACIO EN DISCO" pt="VÍA SIN ESPACIO EN DISCO**" en="VÍA SIN ESPACIO EN DISCO**" />
+  
+  <Mensaje key="Versiones" pt="Versiones**" en="Versiones**" />
+  <Mensaje key="Versión de las Aplicaciones" pt="Versión de las Aplicaciones**" en="Versión de las Aplicaciones**" />
+  <Mensaje key="Servicio de Lógica de Vía" pt="Servicio de Lógica de Vía**" en="Servicio de Lógica de Vía**" />
+  <Mensaje key="Servico de Antena" pt="Servico de Antena**" en="Servico de Antena**" />
+  <Mensaje key="Servicio de Base de Datos Local" pt="Servicio de Base de Datos Local**" en="Servicio de Base de Datos Local**" />
+  <Mensaje key="Servicio de Display" pt="Servicio de Display**" en="Servicio de Display**" />
+  <Mensaje key="Servicio de Foto" pt="Servicio de Foto**" en="Servicio de Foto**" />
+  <Mensaje key="Servicio de Impresora" pt="Servicio de Impresora**" en="Servicio de Impresora**" />
+  <Mensaje key="Pantalla" pt="Pantalla**" en="Pantalla**" />
+  <Mensaje key="Servicio de Tarjeta Chip" pt="Servicio de Tarjeta Chip**" en="Servicio de Tarjeta Chip**" />
+  <Mensaje key="Servicio de Video" pt="Servicio de Video**" en="Servicio de Video**" />
+  <Mensaje key="Servicio Video Continuo" pt="Servicio Video Continuo**" en="Servicio Video Continuo**" />
+  <Mensaje key="Servicio de OCR" pt="Servicio de OCR**" en="Servicio de OCR**" />
+  <Mensaje key="Monitor de Servicios" pt="Monitor de Servicios**" en="Monitor de Servicios**" />
+  <Mensaje key="Testeo" pt="Testeo**" en="Testeo**" />
+  
+  <Mensaje key="Recarga Seleccionada: {0}" pt="Recarga Seleccionada: {0}**" en="Recarga Seleccionada: {0}**" />
+  <Mensaje key="Confirme con tecla {0}" pt="Confirme con tecla {0}**" en="Confirme con tecla {0}**" />
+  <Mensaje key="Error al realizar consulta" pt="Error al realizar consulta**" en="Error al realizar consulta**" />
+  <Mensaje key="FALLA DE IMPRESION DE FACTURA" pt="FALLA DE IMPRESION DE FACTURA**" en="FALLA DE IMPRESION DE FACTURA**" />
+  <Mensaje key="No se permite más de una recarga por vehículo" pt="No se permite más de una recarga por vehículo**" en="No se permite más de una recarga por vehículo**" />
+  <Mensaje key="Cancelar TAG y Recarga" pt="Cancelar TAG y Recarga**" en="Cancelar TAG y Recarga**" />
+  <Mensaje key="Comitiva EFECTIVO" pt="Comitiva EFECTIVO" en="Comitiva EFECTIVO" />
+  <Mensaje key="Comitiva EXENTO" pt="Comitiva EXENTO" en="Comitiva EXENTO" /> 
+	<Mensaje key="Cobro de Deuda" pt="Cobro de Deuda" en="Cobro de Deuda" />
+	<Mensaje key="Deudas Pagadas" pt="Deudas Pagadas" en="Deudas Pagadas" />
+	<Mensaje key="El Vehículo No posee Deudas" pt="El Vehículo No posee Deudas" en="Vehicle hasn't pendings" />
+  <Mensaje key="Comitiva de" pt="Comitiva de**" en="Comitiva de**" />
+  <Mensaje key="Aguardando el paso de la comitiva" pt="Aguardando el paso de la comitiva**" en="Aguardando el paso de la comitiva**" />
+	<Mensaje key="Video y Audio Interno" pt="Video y Audio Interno" en="Internal Video" />
+	<Mensaje key="Ingrese cantidad de ejes" pt="Ingrese Cantidad de ejes" en="Enter the Axis quantity" es-PE="Ingrese cantidad de ejes"/>
+	<Mensaje key="Alarma" pt="Alarma" en="Alarm" />
+</Mensajes>
