@@ -1,0 +1,55 @@
+﻿<Window x:Class="ModuloPantallaTeclado.Sub_Ventanas.VentanaCantEjes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="VentanaCantEjes" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" Height="633" Width="773" Background="Transparent" Foreground="{x:Null}">
+    <Border  Style="{StaticResource BorderStyle}" Name="borderVentanaCantEjes" BorderThickness="0" Background="Transparent">
+        <Border Background="Transparent" Style="{StaticResource BorderStyleHighlighted}" KeyboardNavigation.ControlTabNavigation="None" KeyboardNavigation.TabNavigation="None">
+            <!--Este solo aplica el border resaltado-->
+            <Grid Margin="0 5 0 0" Name="Grid_Principal"  Loaded="Grid_Loaded">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" MinHeight="235"/>
+                    <RowDefinition Height="auto" MinHeight="87"/>
+                    <RowDefinition Height="auto" MinHeight="167"/>
+                </Grid.RowDefinitions>
+                <StackPanel Name="panelTitulo" Orientation="Vertical" Margin="0 5 0 0">
+                    <Label Padding="0" HorizontalAlignment="Center">
+                        <TextBlock Name="lblMenuCantEjes" Style="{StaticResource TituloStyle}" Text="Menú de Ejes" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Label>
+                    <Separator Margin="91 4 90 4" Background="#50575c" Height="2" />
+                </StackPanel>
+                <StackPanel Name="panelCantidadEjes" Grid.Row="1" Margin="26,5,41,0" Orientation="Vertical" HorizontalAlignment="Center" Width="704">
+                    <Grid Margin="-131,10,-128,0" HorizontalAlignment="Center" Width="569">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="284"/>
+                            <ColumnDefinition Width="245"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="39*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Padding="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="74,6,205,5" Height="22" Width="250" Grid.ColumnSpan="2">
+                            <TextBlock x:Name="lblEjes" Style="{StaticResource LabelInput2Style}" Text="Ingrese Cantidad de Ejes:" Height="22" Width="250"/>
+                        </Label>
+                        <TextBox x:Name="txtEjes" Grid.Column="1" Style="{StaticResource TextBoxStyle}" Text="" TextAlignment="Center" Margin="25,0,0,0" Height="Auto"  PreviewMouseDown="EJES_Click" InputScope="NumberFullWidth"/>
+
+                    </Grid>
+                </StackPanel>
+                <StackPanel Name="panelAction" Grid.Row="2" Orientation="Horizontal"  Margin="148,10,0,105">
+                    <Button x:Name="btnAceptar" Width="200" Margin="0 0 15 0"  Content="Confirmar [ENTER]" Style="{StaticResource ActionButtonStyle}" Click="ENTER_Click"/>
+                    <Button x:Name="btnCancelar" Width="200" Content="Volver [ESC]" Click="ESC_Click" >
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Style>
+                            <StaticResource ResourceKey="ActionButtonStyle"/>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

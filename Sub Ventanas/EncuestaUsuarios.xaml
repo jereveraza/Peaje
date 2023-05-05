@@ -1,0 +1,162 @@
+﻿<Window x:Class="ModuloPantallaTeclado.Sub_Ventanas.VentanaEncuestaUsuarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModuloPantallaTeclado.Sub_Ventanas"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="VentanaEncuestaUsuarios" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" Height="550" Width="673" Background="{x:Null}" Foreground="{x:Null}">
+    <Border Background="Transparent" Style="{StaticResource BorderStyle}" Name="borderEncuestaUsuarios" BorderThickness="0">
+        <Border Background="Transparent" Style="{StaticResource BorderStyleHighlighted}" KeyboardNavigation.ControlTabNavigation="None" KeyboardNavigation.TabNavigation="None">
+            <Grid Margin="0,0,0,0" Name="Grid_Principal" Loaded="Grid_Loaded">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Name="panelTitulo" Orientation="Vertical" Grid.ColumnSpan="3">
+                    <!--<Label  x:Name="lblCobroConFactura" HorizontalAlignment="Center">-->
+                    <TextBlock x:Name="txtTituloVentana" Style="{StaticResource TituloStyle}" Text="Encuesta a Usuarios" Margin="0 10 0 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Separator Margin="91 4 90 0" Background="#50575c" Height="2" />
+                    <!--</Label>-->
+                </StackPanel>
+
+                <StackPanel Name="panelInput" Grid.Row="1" Margin="10,10,12,1" Orientation="Vertical" VerticalAlignment="Center" Grid.Column="1">
+                    <Grid HorizontalAlignment="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90"/>
+                            <ColumnDefinition Width="100"/>
+
+                            <!--<ColumnDefinition Width="157"/>-->
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <Grid x:Name="dataGridRespuestas" Grid.Row="1" Grid.Column="1" Margin="0 10 0 0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+
+                        </Grid.RowDefinitions>
+                        <Label Padding="0" Margin="0 3 0 0" Grid.Row="0">
+                            <TextBlock Name="lblNombreEncuesta" FontSize="20" Style="{StaticResource LabelInputStyle}" Text="Pregunta:"/>
+                        </Label>
+                        <TextBox Name="txtNombreEncuesta" Grid.Row="1"  Style="{StaticResource TextBoxStyle}" Margin="0 5 0 15"></TextBox>
+                        <Border Grid.Row="2" Grid.Column="1" Style="{StaticResource BorderBackground}" Margin="0 3 0 0" Background="Transparent">
+                            <Grid HorizontalAlignment="Center" Height="300">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Border Grid.Row="0">
+                                    <Button Grid.Row="0" Width="580" Background="Black" Height="40" Margin="0 5 0 5" Click="Opcion1_Click" Name="BotonOpcion1">
+                                        <TextBlock x:Name="txtOpcion1" Foreground="White" FontWeight="Bold" FontSize="20">Opcion 1</TextBlock>
+                                        <Button.Resources>
+                                            <Style TargetType="{x:Type Border}">
+                                                <Setter Property="CornerRadius" Value="5"/>
+                                            </Style>
+                                        </Button.Resources>
+                                    </Button>
+                                </Border>
+                                <Border Grid.Row="1">
+                                    <Button Grid.Row="1" Width="580" Background="Black" Height="40" Margin="0 5 0 5" Click="Opcion2_Click" Name="BotonOpcion2">
+                                        <TextBlock x:Name="txtOpcion2" Foreground="White" FontWeight="Bold" FontSize="20">Opcion 2</TextBlock>
+                                        <Button.Resources>
+                                            <Style TargetType="{x:Type Border}">
+                                                <Setter Property="CornerRadius" Value="5"/>
+                                            </Style>
+                                        </Button.Resources>
+                                    </Button>
+                                </Border>
+                                <Border Grid.Row="2">
+                                    <Button Grid.Row="2" Width="580" Background="Black" Height="40" Margin="0 5 0 5" Click="Opcion3_Click" Name="BotonOpcion3">
+                                        <TextBlock x:Name="txtOpcion3" Foreground="White" FontWeight="Bold" FontSize="20">Opcion 3</TextBlock>
+                                        <Button.Resources>
+                                            <Style TargetType="{x:Type Border}">
+                                                <Setter Property="CornerRadius" Value="5"/>
+                                            </Style>
+                                        </Button.Resources>
+                                    </Button>
+                                </Border>
+                                <Border Grid.Row="3">
+                                    <Button Grid.Row="3" Width="580" Background="Black" Height="40" Margin="0 5 0 5" Click="Opcion4_Click" Name="BotonOpcion4">
+                                        <TextBlock x:Name="txtOpcion4" Foreground="White" FontWeight="Bold" FontSize="20">Opcion 4</TextBlock>
+                                        <Button.Resources>
+                                            <Style TargetType="{x:Type Border}">
+                                                <Setter Property="CornerRadius" Value="5"/>
+                                            </Style>
+                                        </Button.Resources>
+                                    </Button>
+                                </Border>
+                                <Border Grid.Row="4">
+                                    <Button Grid.Row="4" Width="580" Background="Black" Height="40" Margin="0 5 0 5" Click="Opcion5_Click" Name="BotonOpcion5">
+                                        <TextBlock x:Name="txtOpcion5" Foreground="White" FontWeight="Bold" FontSize="20">Opcion 5</TextBlock>
+                                        <Button.Resources>
+                                            <Style TargetType="{x:Type Border}">
+                                                <Setter Property="CornerRadius" Value="5"/>
+                                            </Style>
+                                        </Button.Resources>
+                                    </Button>
+                                </Border>
+                                <Border Grid.Row="5">
+                                    <Button Grid.Row="5" Width="580" Background="Black" Height="40" Margin="0 5 0 5" Click="Opcion6_Click" Name="BotonOpcion6">
+                                        <TextBlock x:Name="txtOpcion6" Foreground="White" FontWeight="Bold" FontSize="20">Opcion 6</TextBlock>
+                                        <Button.Resources>
+                                            <Style TargetType="{x:Type Border}">
+                                                <Setter Property="CornerRadius" Value="5"/>
+                                            </Style>
+                                        </Button.Resources>
+                                    </Button>
+                                </Border>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+                <StackPanel Name="panelAction" Grid.Row="2" Orientation="Horizontal" Margin="0,10,0,4" Height="32" Grid.Column="1">
+
+                    <TextBlock Name="txtTextoOpcion" FontSize="20" Style="{StaticResource LabelInput3Style}" Text="Opción" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 30 0"/>
+                    <TextBox Name="txtOpcion" Style="{StaticResource TextBoxStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 30 0" Height="32" Width="40"/>
+                    <Button Name="btnAceptar" Width="215" Margin="0 0 5 0" Click="ENTER_Click" Content="Confirmar [ENTER]" Style="{StaticResource ActionButtonStyle}">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Name="btnCancelar" Width="215" Margin="0 0 10 0" Click="ESC_Click" Content="Volver [ESC]" Style="{StaticResource ActionButtonStyle}">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+                <StackPanel Name="panelAction2" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0" Height="32" Grid.Column="1">
+                    <Button Name="btnSalir" Width="300" Margin="0 0 5 0" Click="Salir_Click" Content="Usuario se niega a contestar" Style="{StaticResource ActionButtonStyle}">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

@@ -1,0 +1,91 @@
+﻿<Window x:Class="ModuloPantallaTeclado.Sub_Ventanas.VentanaAutNumeracion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModuloPantallaTeclado.Sub_Ventanas"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="VentanaAutNumeracion" ResizeMode="CanResizeWithGrip"  Background="{x:Null}" Foreground="{x:Null}" AllowsTransparency="True" Height="438" Width="548" Opacity="0.7">
+
+    <Border  Style="{StaticResource BorderStyle}" Name="borderVentanaAutNumeracion" BorderThickness="0" Background="Transparent">
+        <Border Background="Transparent" Style="{StaticResource BorderStyleHighlighted}" KeyboardNavigation.ControlTabNavigation="None" KeyboardNavigation.TabNavigation="None">
+
+            <!--Este solo aplica el border resaltado-->
+            <Grid Margin="0 0 0 0" x:Name="Grid_Principal" Loaded="Grid_Loaded">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <StackPanel Name="panelTitulo" Orientation="Vertical">
+                    <TextBlock x:Name="lblRetiroParcial" Style="{StaticResource TituloStyle}" Margin="0 10 0 0" Text="Numeración" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Separator Margin="91 4 90 0" Background="#50575c" Height="2" />
+                </StackPanel>
+                <StackPanel Name="panelInput" Grid.Row="1" Margin="0 10 0 10" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="1" Grid.Column="0" Margin="0 15 15 0">
+                            <Label Padding="0" >
+                                <TextBlock Name="lblUltimoBloque" Style="{StaticResource LabelInputStyle}" Text="Último Bloque:"/>
+                            </Label>
+                            <TextBox Name="txtBoxUltimoBloque" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="0" Margin="0 15 15 0">
+                            <Label Padding="0" >
+                                <TextBlock Name="lblUltimoTransito" Style="{StaticResource LabelInputStyle}" Text="Último Transito:"/>
+                            </Label>
+                            <TextBox Name="txtBoxUltimoTransito" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="1" Margin="0 15 0 0">
+                            <Label Padding="0" >
+                                <TextBlock Name="lblUltimoTicket" Style="{StaticResource LabelInputStyle}" Text="Última Boleta:"/>
+                            </Label>
+                            <TextBox Name="txtBoxUltimoTicket" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3" Grid.Column="0" Margin="0 15 15 0">
+                            <Label Padding="0" >
+                                <TextBlock Name="lblOrigenDatos" Style="{StaticResource LabelInputStyle}" Text="Origen Datos:"/>
+                            </Label>
+                            <TextBox Name="txtBoxOrigenDatos" Grid.Row="1" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="1" Margin="0 15 0 0">
+                            <Label Padding="0" >
+                                <TextBlock Name="lblFactura" Style="{StaticResource LabelInputStyle}" Text="Última Factura:"/>
+                            </Label>
+                            <TextBox Name="txtBoxFactura" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3" Grid.Column="1" Margin="0 15 0 0">
+                            <Label Padding="0" >
+                                <TextBlock Name="lblDetraccion" Style="{StaticResource LabelInputStyle}" Text="Última Detraccion:"/>
+                            </Label>
+                            <TextBox Name="txtBoxDetraccion" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+                
+                <StackPanel Name="panelAction" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 0" Height="32">
+                    <Button Name="btnAceptar" Width="215" Margin="0 0 15 0" Content="Confirmar [ENTER]" Style="{StaticResource ActionButtonStyle}" Click="ENTER_Click"/>
+                    <Button Name="btnCancelar" Width="215" Content="Volver [ESC]" Style="{StaticResource ActionButtonStyle}"  Click="ESC_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

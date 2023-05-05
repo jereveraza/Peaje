@@ -1,0 +1,291 @@
+﻿<Window x:Class="ModuloPantallaTeclado.Sub_Ventanas.VentanaCategorias"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModuloPantallaTeclado.Sub_Ventanas"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="VentanaCategorias" ResizeMode="CanResizeWithGrip"  Background="{x:Null}" Foreground="{x:Null}" AllowsTransparency="True" Height="438" Width="548" Opacity="0.7">
+
+    <Border  Style="{StaticResource BorderStyle}" Name="borderVentanaCategorias" BorderThickness="0" Background="Transparent">
+        <Border Background="Transparent" Style="{StaticResource BorderStyleHighlighted}" KeyboardNavigation.ControlTabNavigation="None" KeyboardNavigation.TabNavigation="None">
+
+            <!--Este solo aplica el border resaltado-->
+            <Grid Margin="0 0 0 0" x:Name="Grid_Principal" Loaded="Grid_Loaded">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <StackPanel Name="panelTitulo" Orientation="Vertical">
+                    <TextBlock x:Name="lblCategorias" Style="{StaticResource TituloStyle}" Margin="0 10 0 0" Text="Categorias" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Separator Margin="91 4 90 0" Background="#50575c" Height="2" />
+                </StackPanel>
+                <StackPanel Name="panelInput" Grid.Row="1" Margin="0 10 0 10" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid Height="380" Width="500">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="76"/>
+                            <RowDefinition Height="76"/>
+                            <RowDefinition Height="76"/>
+                            <RowDefinition Height="76"/>
+                            <RowDefinition Height="76"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" Grid.Column="2" Margin="5 5 5 5" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <Button x:Name="AUTO" Height="142" Width="190" TextElement.FontSize="24" Background="DeepSkyBlue" FontWeight="Bold" Click="AUTO_Click" Content="LIVIANO">
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="4" Margin="5 5 5 5" Grid.RowSpan="2">
+                            <Button x:Name="P02" Height="142" Width="90" TextElement.FontSize="22" Background="DeepSkyBlue" FontWeight="Bold" Click="P02_Click">P02
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="2" Margin="5 5 5 5">
+                            <Button x:Name="VENTA" Height="66" Width="90" TextElement.FontSize="22" Background="Pink" FontWeight="Bold" Click="VENTA_Click">VENTA
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="3" Margin="5 5 5 5">
+                            <Button x:Name="P03" Height="66" Width="90" TextElement.FontSize="22" Background="DeepSkyBlue" FontWeight="Bold" Click="P03_Click">P03
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="4" Margin="5 5 5 5">
+                            <Button x:Name="P04" Height="66" Width="90" TextElement.FontSize="22" Background="DeepSkyBlue" FontWeight="Bold" Click="P04_Click">P04
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3" Grid.Column="2" Margin="5 5 5 5">
+                            <Button x:Name="P05" Height="66" Width="90" TextElement.FontSize="22" Background="DeepSkyBlue" FontWeight="Bold" Click="P05_Click">P05
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3" Grid.Column="3" Margin="5 5 5 5">
+                            <Button x:Name="P06" Height="66" Width="90" TextElement.FontSize="22" Background="DeepSkyBlue" FontWeight="Bold" Click="P06_Click">P06
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3" Grid.Column="4" Margin="5 5 5 5">
+                            <Button x:Name="P07" Height="66" Width="90" TextElement.FontSize="22" Background="DeepSkyBlue" FontWeight="Bold" Click="P07_Click">P07
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4" Grid.Column="2" Margin="5 5 5 5">
+                            <Button x:Name="P08" Height="66" Width="90" TextElement.FontSize="22" Background="DeepSkyBlue" FontWeight="Bold" Click="P08_Click">P08
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4" Grid.Column="3" Margin="5 5 5 5">
+                            <Button x:Name="P09" Height="66" Width="90" TextElement.FontSize="22" Background="DeepSkyBlue" FontWeight="Bold" Click="P09_Click">P09
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4" Grid.Column="4" Margin="5 5 5 5" >
+                            <Button x:Name="P10" Height="66" Width="90" TextElement.FontSize="22" Background="DeepSkyBlue" FontWeight="Bold" Click="P10_Click">P+10
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="0" Margin="5 5 5 5">
+                            <Button x:Name="VUELTO" Height="66" Width="90" TextElement.FontSize="20" Background="Pink" FontWeight="Bold" Click="VUELTO_Click">VUELTO
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3" Grid.Column="1" Margin="5 5 5 5">
+                            <Button x:Name="PLACA" Height="66" Width="90" TextElement.FontSize="20" Background="Orange" FontWeight="Bold" Click="PLACA_Click">PLACA
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4" Grid.Column="1" Margin="5 5 5 5">
+                            <Button x:Name="FOTO" Height="66" Width="90" TextElement.FontSize="20" Background="Orange" FontWeight="Bold" Click="FOTO_Click">FOTO
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="0" Margin="5 5 5 5">
+                            <Button x:Name="SIP" Height="66" Width="90" TextElement.FontSize="22" Background="Orange" FontWeight="Bold" Click="SIP_Click">SIP
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3" Grid.Column="0" Margin="5 5 5 5" Grid.RowSpan="2">
+                            <Button x:Name="MENU" Height="142" Width="90" TextElement.FontSize="20" Background="Orange" FontWeight="Bold" Click="MENU_Click">MENÚ
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="1" Grid.Column="0" Margin="5 5 5 5" >
+                            <Button x:Name="RETIRO" Height="66" Width="90" TextElement.FontSize="20" Background="Orange" FontWeight="Bold" Click="RETIRO_Click">
+                                RETIRO
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="1" Margin="5 5 5 5" >
+                            <Button x:Name="EX1" Height="66" Width="90" TextElement.FontSize="22" Background="Red" FontWeight="Bold" Click="EX1_Click">EX1
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="1" Margin="5 5 5 5" >
+                            <Button x:Name="EX2" Height="66" Width="90" TextElement.FontSize="22" Background="Red" FontWeight="Bold" Click="EX2_Click">EX2
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="1" Margin="5 5 5 5" >
+                            <Button x:Name="EX3" Height="66" Width="90" TextElement.FontSize="22" Background="Red" FontWeight="Bold" Click="EX3_Click">EX3
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel.Effect>
+                                <DropShadowEffect/>
+                            </StackPanel.Effect>
+                        </StackPanel>
+
+                    </Grid>
+                </StackPanel>
+                
+                
+            </Grid>
+        </Border>
+    </Border>
+</Window>

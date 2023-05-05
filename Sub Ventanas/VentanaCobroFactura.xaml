@@ -1,0 +1,123 @@
+﻿<Window x:Class="ModuloPantallaTeclado.Sub_Ventanas.VentanaCobroFactura"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModuloPantallaTeclado.Sub_Ventanas"
+      mc:Ignorable="d"
+        WindowStyle="None"
+        Title="VentanaRecarga" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" Height="600" Width="673" Background="Transparent" Foreground="{x:Null}">
+    <Window.Resources>
+
+    </Window.Resources>
+    <Border Background="Transparent" Style="{StaticResource BorderStyle}" Name="borderVentanaCobroFactura" BorderThickness="0">
+        <Border Background="Transparent" Style="{StaticResource BorderStyleHighlighted}" Loaded="Border_Loaded" KeyboardNavigation.ControlTabNavigation="None" KeyboardNavigation.TabNavigation="None">
+            <Grid Name="gridIngresoSistema" Margin="0,0,0,0" Loaded="Grid_Loaded">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Name="panelTitulo" Orientation="Vertical" Grid.ColumnSpan="3">
+                    <!--<Label  x:Name="lblCobroConFactura" HorizontalAlignment="Center">-->
+                    <TextBlock x:Name="txtTituloVentana" Style="{StaticResource TituloStyle}" Text="Cobro con Factura" Margin="0 10 0 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Separator Margin="91 4 90 0" Background="#50575c" Height="2" />
+                    <!--</Label>-->
+                </StackPanel>
+                <StackPanel Name="panelInput" Grid.Row="1" Margin="10,8,12,1" Orientation="Vertical" VerticalAlignment="Center" Grid.Column="1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="157"/>
+                            <ColumnDefinition Width="*"/>
+
+                            <!--<ColumnDefinition Width="157"/>-->
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="lblClave" Style="{StaticResource LabelInputStyle}" Text="Clave:"/>
+                        <TextBox x:Name="txtClave" Grid.Row="1" Style="{DynamicResource TextBoxStyle}" Height="35" Width="157" FontSize="28" Margin="0 3 0 0" Padding="4 0 0 0" PreviewMouseDown="txtRuc_PreviewMouseDown" CaretBrush="White" InputScope="NumberFullWidth"/>
+                        <TextBlock x:Name="lblRuc" Grid.Column="1" Padding="0" Margin="11 0 11 0" Style="{StaticResource LabelInputStyle}" Text="RUC:"/>
+                        <TextBox x:Name="txtRuc" Grid.Column="1" Grid.Row="1" Style="{StaticResource TextBoxStyle}" Height="35" FontSize="28" Margin="11,3,0,0" Padding="4 0 0 0" PreviewMouseDown="txtRuc_PreviewMouseDown" CaretBrush="White" InputScope="NumberFullWidth" Width="410"/>
+                        <TextBlock x:Name="lblRazonSocial" Grid.Row="2" Style="{StaticResource LabelInputStyle}" Text="Razón Social:" Margin="0 3 0 0"/>
+                        <TextBox x:Name="txtRazonSocial" Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource TextBoxStyle}" Height="auto" MinHeight="35" Width="575" FontSize="28" Margin="0,3,0,0" Padding="4 0 0 0" PreviewMouseDown="txtRuc_PreviewMouseDown" CaretBrush="White" InputScope="AlphanumericFullWidth" TextWrapping="Wrap"/>
+                    </Grid>
+                    <Grid x:Name="Contenedor" Grid.Row="1" Grid.Column="1" Margin="0 3 0 0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+
+                        </Grid.RowDefinitions>
+                        <Label Padding="0" Margin="0 3 0 0">
+                            <TextBlock Name="lblClientes" Style="{StaticResource LabelInputStyle}" Text="Clientes:"/>
+                        </Label>
+                        <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource BorderBackground}" Margin="0 3 0 0">
+                            <DataGrid x:Name="dataGridClientes" AutoGenerateColumns="False" RowStyle="{StaticResource RowStyle}" RowHeaderStyle="{StaticResource RowHeaderStyle}" Style="{StaticResource DataGridStyle}" CellStyle="{StaticResource CellStyle}"
+                                    Height="244" Margin="0,0,0,0" Width="575" >
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn x:Name="colNumeroCliente" Width="35" Binding="{Binding NumeroCliente, StringFormat={}{0:D2}}" Header="Cliente" />
+                                    <DataGridTextColumn x:Name="colRuc" Width="150" Binding="{Binding InfoCliente.Ruc}" Header="RUC" />
+                                    <DataGridTextColumn x:Name="colRazonSocial" Width="400" Binding="{Binding InfoCliente.RazonSocial}" Header="Razon Social" />
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+                <StackPanel Name="panelAction" Grid.Row="2" Orientation="Horizontal" Margin="0,10,0,4" Height="32" Grid.Column="1">
+                    <TextBlock Name="txtTextoOpcion" Style="{StaticResource LabelInput3Style}" Text="Opción" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 8 0"/>
+                    <TextBox Name="txtOpcion" Style="{StaticResource TextBoxStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 10 0" Height="32" Width="40"/>
+                    <Button Name="btnAceptar" Width="200" Margin="0 0 5 0" Content="Confirmar [ENTER]" Style="{StaticResource ActionButtonStyle}" Click="ENTER_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Name="btnCancelar" Width="140" Margin="0 0 10 0" Content="Volver [ESC]" Style="{StaticResource ActionButtonStyle}" Click="ESC_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Name="btnNext" Width="120" Margin="0 0 5 0" Content="Siguiente Pag." Style="{StaticResource ActionButtonStyle}" Click="SIGUIENTE_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                </StackPanel>
+                <StackPanel Name="panelTarjeta" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0" Height="32" Grid.Column="1">
+                    
+                    
+<Button Name="btnTarjeta" Width="300" Margin="0 0 5 0" Content="Confirmar [TARJETA CREDITO]" Style="{StaticResource ActionButtonStyle}" Click="TARJETA_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    
+                </StackPanel>
+                <StackPanel Name="panelAction2" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0" Height="32" Grid.Column="1">
+                    <Label Padding="0" >
+                        <TextBlock Name="txtTeclaSiguiente" Style="{StaticResource LabelInputStyle}" Text=""/>
+                    </Label>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modulo_Pantalla_Teclado", "Modulo_Pantalla_Teclado.csproj", "{81E875B1-C46B-46E2-8B03-15BD4EC4B63F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "..\Entidades\Entidades\Entidades\Entidades.csproj", "{707FEA2E-AFA6-4BCF-8C1F-F180C9A574B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utiles", "..\Utiles\Utiles.csproj", "{C66CB67B-764E-48D4-99C3-E1B245334666}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81E875B1-C46B-46E2-8B03-15BD4EC4B63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E875B1-C46B-46E2-8B03-15BD4EC4B63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E875B1-C46B-46E2-8B03-15BD4EC4B63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E875B1-C46B-46E2-8B03-15BD4EC4B63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{707FEA2E-AFA6-4BCF-8C1F-F180C9A574B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{707FEA2E-AFA6-4BCF-8C1F-F180C9A574B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{707FEA2E-AFA6-4BCF-8C1F-F180C9A574B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{707FEA2E-AFA6-4BCF-8C1F-F180C9A574B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66CB67B-764E-48D4-99C3-E1B245334666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66CB67B-764E-48D4-99C3-E1B245334666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66CB67B-764E-48D4-99C3-E1B245334666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66CB67B-764E-48D4-99C3-E1B245334666}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

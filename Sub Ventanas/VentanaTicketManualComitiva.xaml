@@ -1,0 +1,146 @@
+﻿<Window x:Class="ModuloPantallaTeclado.Sub_Ventanas.VentanaTicketManualComitiva"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModuloPantallaTeclado.Sub_Ventanas"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="VentanaTicketManualComitiva" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" Height="460" Width="700" Background="{x:Null}" Foreground="{x:Null}">
+    <Border Name="borderTicketManual">
+
+        <Border Background="Transparent" Style="{StaticResource BorderStyleHighlighted}">
+            <!--Este solo aplica el border resaltado-->
+
+            <Grid x:Name="Grid_Principal" Margin="0 0 0 0" Loaded="Grid_Loaded">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <StackPanel x:Name="panelTitulo" Orientation="Vertical">
+                    <TextBlock x:Name="lblTitulo" Style="{StaticResource TituloStyle}" Margin="0 10 0 0"  Text="Ticket Manual" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Separator Margin="91 10 90 0" Background="#83959A" />
+                    <Button Height="50" Width="50" Content="Boton" Margin="324,0"/>
+                </StackPanel>
+                <StackPanel x:Name="panelInput" Grid.Row="1" Margin="0 0 0 0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid x:Name="gridHoraInicioFin" Visibility="Collapsed" HorizontalAlignment="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="140"/>
+                            <ColumnDefinition Width="140"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Padding="0" Visibility="Collapsed">
+                            <TextBlock Name="lblHoraInicio" Style="{StaticResource LabelInputStyle}" Text="Hora Inicio:"/>
+                        </Label>
+                        <TextBox Name="txtHoraInicio" Grid.Row="1" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" HorizontalContentAlignment="Center" Padding="4 0 0 0" />
+                        <Label Grid.Column="1" Padding="0" Margin="11 0 11 0">
+                            <TextBlock Name="lblHoraFin" Style="{StaticResource LabelInputStyle}" Text="Hora Fin:"/>
+                        </Label>
+                        <TextBox Name="txtHoraFin" Grid.Column="1" Grid.Row="1" Style="{StaticResource TextBoxStyle}" Text="" Margin="10 5 0 0" HorizontalContentAlignment="Center" Padding="4 0 0 0"/>
+                    </Grid>
+                    <Grid Margin="0 20 0 0" Name="gridTransitos">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110"/>
+                            <ColumnDefinition Width="75"/>
+                            <ColumnDefinition Width="110"/>
+                            <ColumnDefinition Width="75"/>
+                            <ColumnDefinition Width="110"/>
+                            <ColumnDefinition Width="65"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Padding="0" Grid.ColumnSpan="3" Margin="0 2 0 5">
+                            <TextBlock Name="lblTransitosAIngresar" Style="{StaticResource LabelInputStyle}" Text="Ingrese Cantidades por Categoría:"/>
+                        </Label>
+                        <TextBox Name="textCategoria0" Grid.Row="1" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria0" Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 5 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT0_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria1" Grid.Row="1" Grid.Column="2" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria1" Grid.Row="1" Grid.Column="3" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 5 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT1_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria3" Grid.Row="2" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria3" Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT3_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria4" Grid.Row="2" Grid.Column="2" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria4" Grid.Row="2" Grid.Column="3" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT4_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria6" Grid.Row="3" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria6" Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT6_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria7" Grid.Row="3" Grid.Column="2" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria7" Grid.Row="3" Grid.Column="3" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT7_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria9" Grid.Row="4" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria9" Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT9_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria10" Grid.Row="4" Grid.Column="2" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria10" Grid.Row="4" Grid.Column="3" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT10_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria12" Grid.Row="5" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria12" Grid.Row="5" Grid.Column="1" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT12_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria13" Grid.Row="5" Grid.Column="2" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria13" Grid.Row="5" Grid.Column="3" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT13_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria15" Grid.Row="6" Grid.Column="0" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria15" Grid.Row="6" Grid.Column="1" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 5 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT15_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria16" Grid.Row="6" Grid.Column="2" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria16" Grid.Row="6" Grid.Column="3" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 5 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT16_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria18" Grid.Row="7" Grid.Column="0" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria18" Grid.Row="7" Grid.Column="1" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 5 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT18_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria19" Grid.Row="7" Grid.Column="2" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria19" Grid.Row="7" Grid.Column="3" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 5 10 0" Padding="4 0 0 0" PreviewMouseDown="CAT19_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria2" Grid.Row="1" Grid.Column="4" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 5 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="textCategoria5" Grid.Row="2" Grid.Column="4" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="textCategoria8" Grid.Row="3" Grid.Column="4" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="textCategoria11" Grid.Row="4" Grid.Column="4" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="textCategoria14" Grid.Row="5" Grid.Column="4" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria2" Grid.Row="1" Grid.Column="5" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 5 0 0" Padding="4 0 0 0" PreviewMouseDown="CAT2_Click" InputScope="Number"/>
+                        <TextBox Name="txtCantidadCategoria5" Grid.Row="2" Grid.Column="5" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 0 0" Padding="4 0 0 0" PreviewMouseDown="CAT5_Click" InputScope="Number"/>
+                        <TextBox Name="txtCantidadCategoria8" Grid.Row="3" Grid.Column="5" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 0 0" Padding="4 0 0 0" PreviewMouseDown="CAT8_Click" InputScope="Number"/>
+                        <TextBox Name="txtCantidadCategoria11" Grid.Row="4" Grid.Column="5" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 0 0" Padding="4 0 0 0" PreviewMouseDown="CAT11_Click" InputScope="Number"/>
+                        <TextBox Name="txtCantidadCategoria14" Grid.Row="5" Grid.Column="5" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 0 0" Padding="4 0 0 0" PreviewMouseDown="CAT14_Click" InputScope="Number"/>
+                        <TextBox Name="textCategoria17" Grid.Row="6" Grid.Column="4" Style="{StaticResource TextBoxStyle}" Text="" Margin="0 10 0 0" Padding="4 0 0 0" HorizontalContentAlignment="Center"/>
+                        <TextBox Name="txtCantidadCategoria17" Grid.Row="6" Grid.Column="5" Style="{StaticResource TextBoxLiquidacionStyle}" Text="" Margin="5 10 0 0" Padding="4 0 0 0" PreviewMouseDown="CAT17_Click" InputScope="Number"/>
+                    </Grid>
+
+                </StackPanel>
+                <StackPanel x:Name="panelAction" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 15" Height="32">
+                    <Button x:Name="btnAceptar" Width="200" Margin="0 0 15 0" Content="Continuar [ENTER]" Click="ENTER_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Style>
+                            <StaticResource ResourceKey="ActionButtonStyle"/>
+                        </Button.Style>
+                    </Button>
+
+                    <Button x:Name="btnCancelar" Width="200" Margin="0 0 15 0" Content="Volver [ESC]" Click="ESC_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Style>
+                            <StaticResource ResourceKey="ActionButtonStyle"/>
+                        </Button.Style>
+                    </Button>
+                    <Button x:Name="btnConfirmar" Width="200" Margin="0 0 15 0" Content="Confirmar" Click="CONFIRMAR_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Style>
+                            <StaticResource ResourceKey="ActionButtonStyle"/>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

@@ -1,0 +1,219 @@
+﻿<Window x:Class="ModuloPantallaTeclado.Sub_Ventanas.VentanaRetiroAnticipadoDenominaciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModuloPantallaTeclado.Sub_Ventanas"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="VentanaRetiroAnticipadoDenominaciones" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" Height="440" Width="548" Background="{x:Null}" Foreground="{x:Null}">
+    <Border Name="borderVentanaRetiroPorDenominacion" KeyboardNavigation.ControlTabNavigation="None" KeyboardNavigation.TabNavigation="None">
+        <Grid Loaded="Grid_Loaded" Name="Grid_Principal">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="159*"/>
+                <ColumnDefinition Width="304*"/>
+                <ColumnDefinition Width="35*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="46*"/>
+                <RowDefinition Height="35*"/>
+                <RowDefinition Height="35*"/>
+                <RowDefinition Height="36*"/>
+                <RowDefinition Height="214*"/>
+                <RowDefinition Height="41*"/>
+                <RowDefinition Height="33*"/>
+            </Grid.RowDefinitions>
+            <GroupBox x:Name="groupBox" Header="Denominaciones" Foreground="White" HorizontalAlignment="Left" Margin="37,4,0,0" Grid.Row="4" VerticalAlignment="Top" RenderTransformOrigin="0.254,0.188" Grid.ColumnSpan="2" Height="194" Width="401" Grid.Column="1"/>
+            <Label x:Name="lblRetiroParcial" Content="Retiro" HorizontalContentAlignment="Center" Foreground="White" Margin="0,4,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" FontFamily="Arial" Grid.Column="1" Grid.ColumnSpan="2" Height="44" Grid.RowSpan="2"/>
+            <Label x:Name="lblCajero" Content="Cajero:" Foreground="White" Margin="30,0,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="22" FontWeight="Bold" Grid.Column="1" Height="35" Grid.Row="1"/>
+            <TextBox x:Name="txtCajero" TextAlignment="Center" VerticalContentAlignment="Center" IsReadOnly = "True" HorizontalAlignment="Left" Height="25" Margin="11,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="1" Grid.Column="2">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Label x:Name="lblNombreCajero" Content="Nombre:" Foreground="White" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="22" FontWeight="Bold" Width="130" Grid.Row="2" Grid.Column="1" Height="35"/>
+            <TextBox x:Name="txtNombre" TextAlignment="Center" VerticalContentAlignment="Center" IsReadOnly = "True" HorizontalAlignment="Left" Height="25" Margin="11,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="2" Grid.Column="2">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Label x:Name="lblParte" Content="Parte:" Foreground="White" Margin="30,0,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="22" FontWeight="Bold" Grid.Row="3" Grid.Column="1" Height="35"/>
+            <TextBox x:Name="txtParte" TextAlignment="Center" VerticalContentAlignment="Center" IsReadOnly = "True" HorizontalAlignment="Left" Height="25" Margin="10,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="3" Grid.Column="2">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Label x:Name="lblImporteARetirar" Content="Importe:" Foreground="White" HorizontalAlignment="Left" Margin="32,204,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="22" FontWeight="Bold" Width="103" Grid.Row="4" Height="35" Grid.Column="1" Grid.RowSpan="2" RenderTransformOrigin="0.752,0.514"/>
+            <TextBox x:Name="txtImporte" TextAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap" Width="134" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="4" Grid.Column="1" Height="26" VerticalAlignment="Top" Margin="135,208,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Label x:Name="lblNumeroBolsa" Content="Bolsa:" Foreground="White" HorizontalAlignment="Left" Margin="2,35,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="22" FontWeight="Bold" Width="80" Grid.Row="5" Height="35" Grid.Column="1" Grid.RowSpan="2"/>
+            <TextBox x:Name="txtBolsa" TextAlignment="Center" HorizontalAlignment="Left" Margin="79,0,0,9" TextWrapping="Wrap" Width="134" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="textDenominacion0" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="61,33,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.ColumnSpan="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="txtCantidadDenominacion0" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="27,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="4" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="textDenominacion1" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="61,63,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.ColumnSpan="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="txtCantidadDenominacion1" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="27,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="4" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="textDenominacion2" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="61,94,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.ColumnSpan="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="txtCantidadDenominacion2" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="27,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="4" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="textDenominacion3" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="61,125,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.ColumnSpan="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="txtCantidadDenominacion3" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="27,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="4" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="textDenominacion4" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="61,156,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.ColumnSpan="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="txtCantidadDenominacion4" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="27,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="4" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="textDenominacion5" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="82,33,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="txtCantidadDenominacion5" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="207,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="4" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="textDenominacion6" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="82,64,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="txtCantidadDenominacion6" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="207,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="4" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="textDenominacion7" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="82,94,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="txtCantidadDenominacion7" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="207,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="4" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="textDenominacion8" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="82,125,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="txtCantidadDenominacion8" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="207,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="4" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="textDenominacion9" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="82,156,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="txtCantidadDenominacion9" VerticalContentAlignment="Center" TextAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="207,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="4" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Label x:Name="lblNumeroPrecinto" Content="Precinto:" Foreground="White" HorizontalAlignment="Left" Margin="56,35,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="22" FontWeight="Bold" Width="110" Grid.Row="5" Grid.Column="2" Height="35" Grid.RowSpan="2"/>
+            <TextBox x:Name="txtPrecinto" TextAlignment="Center" HorizontalAlignment="Left" Margin="159,0,0,9" TextWrapping="Wrap" Width="134" FontFamily="Arial" FontSize="16" Background="Black" Foreground="White" Grid.Row="6" Grid.Column="2" IsEnabled="False">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+        </Grid>
+    </Border>
+</Window>

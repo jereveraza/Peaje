@@ -1,0 +1,14 @@
+﻿<Window x:Class="ModuloPantallaTeclado.VentanaPrincipal"
+        Name="ventanaPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Deactivated="MainWindow_OnDeactivated"
+        mc:Ignorable="d"
+        Title="TCP - TOLL WINDOWS" WindowState="Maximized" WindowStyle="None" Height="768" Width="1280" Loaded="Window_Loaded" Closing="Window_Closing" ResizeMode="NoResize" HorizontalAlignment="Left" VerticalAlignment="Top" Left="0" Top="0" Icon="Recursos/telectronica_icono.ico" KeyDown="gridPrincipal_KeyDown" Background="{DynamicResource BackgroundColor}">
+    <Border Name="borderPrincipal" Background="Transparent" BorderThickness="0">
+        <Grid Name="gridPrincipal" KeyDown="gridPrincipal_KeyDown" KeyUp="gridPrincipal_KeyUp">
+        </Grid>
+    </Border>
+</Window>

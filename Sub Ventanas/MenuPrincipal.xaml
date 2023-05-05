@@ -1,0 +1,97 @@
+﻿<Window x:Class="ModuloPantallaTeclado.Sub_Ventanas.MenuPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"    
+        WindowStyle="None"
+        Title="MenuPrincipal" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" Height="438" Width="548" Background="{x:Null}" Foreground="{x:Null}">
+
+    <Border Name="borderMenuPrincipal">
+        <Border Background="Transparent" Style="{StaticResource BorderStyleHighlighted}">
+            <!--Este solo aplica el border resaltado-->
+            <Grid x:Name="gridIngresoSistema" Margin="0 0 0 0" Loaded="Grid_Loaded">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <StackPanel x:Name="panelTitulo" Orientation="Vertical">
+
+                    <TextBlock x:Name="lblTituloMenu" Style="{StaticResource TituloStyle}" Margin="0 10 0 0"  Text="Causa de cierre" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <!--<Label  x:Name="lblTituloMenu" HorizontalAlignment="Center">
+                    </Label>-->
+                    <!--<Separator Margin="91 5 90 0" Background="#50575c" />-->
+                    <Separator Margin="91 10 90 0" Background="#83959A" />
+                </StackPanel>
+                <StackPanel x:Name="panelInput" Grid.Row="1" Margin="0 0 0 0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Border  Style="{StaticResource BorderBackground}" Margin="0 5 0 0">
+                            <ListBox x:Name="listBoxMenu"  ItemContainerStyle="{StaticResource ListBoxItemStyle}" Style="{StaticResource ListBoxStyle}"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="498" Height="330" PreviewMouseDown="OnPreviewMouseDown"/>
+                        </Border>
+                        <!--#region HACK CORNERS-->
+                        <Canvas Margin="-500 -281 0 0" Width="1" Height="1">
+                            <Path Stroke="{DynamicResource BlockColor}" StrokeThickness="2" >
+                                <Path.Data>
+                                    <PathGeometry>
+                                        <PathGeometry.Figures>
+                                            <PathFigure StartPoint="6,-1" IsClosed="False">
+                                                <ArcSegment Point="2,3" Size="6 6"/>
+                                            </PathFigure>
+                                        </PathGeometry.Figures>
+                                    </PathGeometry>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                        <Canvas Margin="488 -271 0 0" Width="1" Height="1">
+                            <Path Stroke="{DynamicResource BlockColor}" StrokeThickness="2" >
+                                <Path.Data>
+                                    <PathGeometry>
+                                        <PathGeometry.Figures>
+                                            <PathFigure StartPoint="6,-1" IsClosed="False">
+                                                <ArcSegment Point="2,-7" Size="6 6"/>
+                                            </PathFigure>
+                                        </PathGeometry.Figures>
+                                    </PathGeometry>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                        <!--#endregion-->
+                    </Grid>
+                    <StackPanel x:Name="panelOpcionElegida" Grid.Row="1" Height="Auto" Margin="0 10 0 2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                        <TextBlock x:Name="txtOpcion" Style="{StaticResource LabelInput3Style}" Text="Opción" Margin="0 0 0 0" Width="70" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBox x:Name="lblMenuOpcion" Style="{StaticResource TextBoxStyleHighlighted}" Margin="0 0 0 0"  Width="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel x:Name="panelAction" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 0" Height="32">
+                    <Button x:Name="btnAceptar" Width="215" Margin="0 0 15 0" Content="Confirmar [ENTER]" Click="ENTER_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Style>
+                            <StaticResource ResourceKey="ActionButtonStyle"/>
+                        </Button.Style>
+                    </Button>
+                    <Button x:Name="btnCancelar" Width="215" Margin="0 0 15 0" Content="Volver [ESC]" Click="ESC_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Style>
+                            <StaticResource ResourceKey="ActionButtonStyle"/>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

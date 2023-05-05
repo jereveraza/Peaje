@@ -1,0 +1,101 @@
+﻿<Window x:Class="ModuloPantallaTeclado.Sub_Ventanas.VentanaCobroDeudas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModuloPantallaTeclado.Sub_Ventanas"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="VentanaCobroDeudas" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" Height="550" Width="673" Background="{x:Null}" Foreground="{x:Null}">
+    <Border Background="Transparent" Style="{StaticResource BorderStyle}" Name="borderCobroDeudas" BorderThickness="0">
+        <Border Background="Transparent" Style="{StaticResource BorderStyleHighlighted}" KeyboardNavigation.ControlTabNavigation="None" KeyboardNavigation.TabNavigation="None">
+            <Grid Margin="0,0,0,0" Name="Grid_Principal" Loaded="Grid_Loaded">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Name="panelTitulo" Orientation="Vertical" Grid.ColumnSpan="3">
+                    <!--<Label  x:Name="lblCobroConFactura" HorizontalAlignment="Center">-->
+                    <TextBlock x:Name="txtTituloVentana" Style="{StaticResource TituloStyle}" Text="Cobro de Deudas" Margin="0 10 0 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Separator Margin="91 4 90 0" Background="#50575c" Height="2" />
+                    <!--</Label>-->
+                </StackPanel>
+
+                <StackPanel Name="panelInput" Grid.Row="1" Margin="10,10,12,1" Orientation="Vertical" VerticalAlignment="Center" Grid.Column="1">
+                    <Grid HorizontalAlignment="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90"/>
+                            <ColumnDefinition Width="100"/>
+
+                            <!--<ColumnDefinition Width="157"/>-->
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="lblPatente" Style="{StaticResource LabelInputStyle}" VerticalAlignment="Center" Text="Patente:"/>
+                        <TextBox x:Name="txtBoxPatente" Grid.Column="1" Style="{StaticResource TextBoxStyle}" Margin="0 3 0 0" Padding="4 0 0 0"/>
+                    </Grid>
+                    <Grid x:Name="Contenedor" Grid.Row="1" Grid.Column="1" Margin="0 10 0 0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+
+                        </Grid.RowDefinitions>
+                        <Label Padding="0" Margin="0 3 0 0">
+                            <TextBlock Name="lblDeudas" Style="{StaticResource LabelInputStyle}" Text="Deudas Pendientes:"/>
+                        </Label>
+                        <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource BorderBackground}" Margin="0 3 0 0">
+                            <DataGrid x:Name="dataGridDeudas" AutoGenerateColumns="False" RowStyle="{StaticResource RowDeudaStyle}" RowHeaderStyle="{StaticResource RowHeaderStyle}" Style="{StaticResource DataGridStyle}" CellStyle="{StaticResource CellDeudaStyle}"
+                                    Height="244" Margin="0,0,0,0" >
+                                <DataGrid.Columns>
+                                    <DataGridCheckBoxColumn Width="35" Binding="{Binding DeudaSeleccionada}" Header="Selección" />
+                                    <DataGridTextColumn Width="35" Binding="{Binding NumeroDeuda, StringFormat={}{0:D2}}" Header="Número" />
+                                    <DataGridTextColumn Width="75" Binding="{Binding Tipo}" Header="Tipo" />
+                                    <DataGridTextColumn Width="92" Binding="{Binding IdPago}" Header="Id" />
+                                    <DataGridTextColumn Width="140" Binding="{Binding FechaHora}" Header="Fecha y Hora" />
+                                    <DataGridTextColumn Width="74" Binding="{Binding InfoDeuda.DescripcionCategoria}" Header="Categoria" />
+                                    <DataGridTextColumn Width="115" Binding="{Binding Estacion}" Header="Estacion" />
+                                    <DataGridTextColumn Width="90" Binding="{Binding Monto}" Header="Monto" />
+                                </DataGrid.Columns>
+
+                            </DataGrid>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+                <StackPanel Name="panelAction" Grid.Row="2" Orientation="Horizontal" Margin="0,10,0,4" Height="32" Grid.Column="1">
+
+                    <TextBlock Name="txtTextoOpcion" Style="{StaticResource LabelInput3Style}" Text="Opción" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 30 0"/>
+                    <TextBox Name="txtOpcion" Style="{StaticResource TextBoxStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 30 0" Height="32" Width="40"/>
+                    <Button Name="btnAceptar" Width="215" Margin="0 0 5 0" Click="ENTER_Click" Content="Confirmar [ENTER]" Style="{StaticResource ActionButtonStyle}">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Name="btnCancelar" Width="215" Margin="0 0 10 0" Click="ESC_Click" Content="Volver [ESC]" Style="{StaticResource ActionButtonStyle}">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+                <StackPanel Name="panelAction2" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0" Height="32" Grid.Column="1">
+                    <Label Padding="0" >
+                        <TextBlock Name="txtTeclaSiguiente" Style="{StaticResource LabelInputStyle}" Text=""/>
+                    </Label>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

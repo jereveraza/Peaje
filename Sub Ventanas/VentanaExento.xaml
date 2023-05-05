@@ -1,0 +1,64 @@
+﻿<Window x:Class="ModuloPantallaTeclado.Sub_Ventanas.VentanaExento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="VentanaExento" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" Height="438" Width="548" Background="{x:Null}" Foreground="{x:Null}">
+    <Border Name="borderVentanaExento" >
+        <Border Background="Transparent" Style="{StaticResource BorderStyleHighlighted}" >
+            <!--Este solo aplica el border resaltado-->
+            <Grid Name="gridIngresoSistema" Margin="0 0 0 0" Loaded="Grid_Loaded">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <StackPanel Name="panelTitulo" Orientation="Vertical">
+
+                    <TextBlock x:Name="lblTituloMenu" Style="{StaticResource TituloStyle}" Margin="0 10 0 0"  Text="Menú de Exento" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <!--<Label  x:Name="lblTituloMenu" HorizontalAlignment="Center">
+                    </Label>-->
+                    <Separator Margin="91 4 90 0" Background="#50575c" />
+                </StackPanel>
+                <StackPanel Name="panelInput" Grid.Row="1" Margin="0 0 0 0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Border  Style="{StaticResource BorderBackground}" Margin="0 5 0 0">
+                            <ListBox x:Name="listaOpciones"  ItemContainerStyle="{StaticResource ListBoxItemStyle}" Style="{StaticResource ListBoxStyle}"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="498" Height="290" PreviewMouseDown="OnPreviewMouseDown">
+
+                            </ListBox>
+                        </Border>
+
+                    </Grid>
+                    <StackPanel Name="panelOpcionElegida" Grid.Row="1" Height="30" Margin="0 10 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                        <TextBlock Name="txtOpcion" Style="{StaticResource LabelInput3Style}" Text="Opción" Margin="0 0 0 0" Width="70" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBox Name="lblMenuOpcion" Style="{StaticResource TextBoxStyle}" Margin="0 0 0 0"  Width="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel Name="panelAction" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 0" Height="32">
+                    <Button Name="btnAceptar" Width="215" Margin="0 0 15 0" Content="Confirmar [ENTER]" Style="{StaticResource ActionButtonStyle}" Click="ENTER_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Name="btnCancelar" Width="215" Margin="0 0 15 0" Content="Volver [ESC]" Style="{StaticResource ActionButtonStyle}" Click="ESC_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>
